@@ -512,6 +512,27 @@ p:last-child {
     color: var(--clr-blanco);
 }
 
+.informacion_input {
+    width: 80%;
+    padding: 0.50em 1em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: .8rem;
+    font-family: fuente2;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--clr-blanco);
+    color: var(--clr-gris_oscuro);
+}
+
+.informacion_input::placeholder {
+    color: var(--clr-gris_oscuro);
+}
+
+.informacion_input:focus {
+    border-color: #007BFF;
+}
+
 /* --------------- REDES SOCIALES START --------------- */
 
 .redes_sociales {
@@ -537,15 +558,15 @@ p:last-child {
 /* --------------- LOGO TEXTO START --------------- */
 
 .logo_texto {
-    width:90%;
+    width:100%;
     margin: 0 auto;
-    padding: .5em;
     text-align: left;
+    padding: 1em 0;
 }
 
 .logo_texto__description {
     margin-bottom: 1rem;
-    color: var(--clr-black);
+    color: var(--clr-blanco);
     font-size: .7rem;    
 }
 
@@ -553,7 +574,6 @@ p:last-child {
     display: inline-grid;
     justify-items: center;
     align-items: center;
-    grid-gap: 2em;
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr;
@@ -563,7 +583,7 @@ p:last-child {
 
 .logo_texto__img { 
     grid-area: img; 
-    max-width: 400px;
+    max-width: 90px;
     margin: 0 auto;
     width: 100%;
 }
@@ -578,7 +598,8 @@ p:last-child {
     text-align: center;
     color: var(--clr-gris_oscuro);
     font-family: fuente2;
-    margin: 0 2.5em;
+    margin: 0 2em;
+    font-size: .7rem;
 }
 
 .contacto_informacion a{
