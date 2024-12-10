@@ -480,54 +480,34 @@ p:last-child {
 
 /* --------------- FOOTER START --------------- */
 
-footer {
-    background-color: var(--clr-negro);
-}
-
-.contact {
+.informacion {
     width:100%;
-    padding: 1em;
     text-align: left;
+    background-color: rgb(27, 27, 27);
+    padding: 1em;
 }
 
-.contact__box {
-    display: inline-grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "form"
-    "container"
-}
 
-.contact__container { grid-area: container; }
-
-.contact__container {
-    width: 100%;
-    margin-top: 0;
-    height: 100%;
-}
-
-.contact__title {
+.informacion__titulo {
     font-size: 1.3rem;
     font-family: fuente1;
     color: var(--clr-blanco);
     letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: .5em;
+    margin-top: .8em;
     line-height: 1.5em;
 }
 
-.contact__description {
+.informacion__descripcion {
     color: var(--clr-blanco);
-    font-family: fuente1;
-    font-size: .7rem;
+    font-family: fuente2;
+    font-size: .9rem;
     margin-bottom: .3em;
-    font-weight: lighter;
+    font-weight: 400;
 }
 
-.contact__description a {
+.informacion__descripcion a {
     text-decoration: none;
     color: var(--clr-blanco);
 }
@@ -591,39 +571,90 @@ footer {
 
 /* --------------- LOGO TEXTO END --------------- */
 
-/* --------------- FOOTER END --------------- */
+/* --------------- CONTACTO INFORMACION START --------------- */
+
+
+.contacto_informacion {
+    text-align: center;
+    color: var(--clr-gris_oscuro);
+    font-family: fuente2;
+    margin: 0 2.5em;
+}
+
+.contacto_informacion a{
+    text-decoration: underline;
+    color: var(--clr-gris_oscuro);
+}
+
+
+/* --------------- CONTACTO INFORMACION END --------------- */
+
+/* --------------- INFORMACION NEGRO START --------------- */
+
+.informacion_negro {
+    background-color: var(--clr-negro);
+}
 
 /* --------------- LOGOS START --------------- */
 
 .logos {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 1em;    
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+        "logo1 logo2"
+        "logo3 logo4"
+        "logo5 logo5";
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
-    grid-template-areas: 
-    "logo1"
-    "logo2"
-    "logo3";
+    text-align: center;
 }
 
 .logo1 {grid-area: logo1;}
 .logo2 {grid-area: logo2;}
 .logo3 {grid-area: logo3;}
+.logo4 {grid-area: logo4;}
+.logo5 {grid-area: logo5;}
 
-.logo  {
-    width: 220px;
-    padding: 2rem;
+.logo {
+    padding: .6em;
+    max-width: 150px;
+    max-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
-  }
+    overflow: hidden;
+}
 
-  .logo img {
-    width: 100%;
-    height: 60px;
-    object-fit: fill;
-  }
+.logo img {
+    max-width: 100%; /* Fit the width */
+    max-height: 100%; /* Fit the height */
+    object-fit: contain; /* Keep image proportions */
+}
+
 /* --------------- LOGOS END --------------- */
+
+/* --------------- COPYRIGHT START --------------- */
+
+.copyright{
+    color:var(--clr-blanco);
+    font-family: fuente2;
+    font-size: .7rem;
+}
+
+/* --------------- COPYRIGHT START --------------- */
+
+/* --------------- INFORMACION NEGRO END --------------- */
+
+/* --------------- FOOTER END --------------- */
+
+
+
 
 
 
