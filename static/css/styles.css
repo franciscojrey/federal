@@ -598,7 +598,7 @@ p:last-child {
 /* --------------- LOGOS START --------------- */
 
 .logos {
-    padding: 1em;    
+    padding: 1em 4em;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -606,7 +606,7 @@ p:last-child {
         "logo1 logo2"
         "logo3 logo4"
         "logo5 logo5";
-    gap: 1rem;
+    gap: .5rem;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -645,6 +645,7 @@ p:last-child {
     color:var(--clr-blanco);
     font-family: fuente2;
     font-size: .7rem;
+    padding-bottom: 1em;
 }
 
 /* --------------- COPYRIGHT START --------------- */
