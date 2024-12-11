@@ -41,6 +41,14 @@ header {
     height: 40px;
 }
 
+.nombre {
+    display: none;
+    color: var(--clr-rojo-fuerte);
+    font-family: fuente1;
+    margin-left: .9em;
+    font-weight: bolder;
+}
+
 .buttons {
     display: flex;
     gap: 0.5em;
@@ -137,7 +145,6 @@ header {
     color: var(--clr-negro);
     padding: 0.5em 0;
     border-radius: 4px;
-    width: calc(100% - 2em);
     text-align: left;
 }
 
@@ -167,4 +174,21 @@ header {
     border: none;
     color: var(--clr-secondary);
     cursor: pointer;
+}
+
+@media (min-width: 769px) {
+
+    header {
+        margin: 1em 2em;
+        border-radius: 18px;
+        background-color: var(--clr-gris);
+    }
+
+    .nombre {
+        display: block;
+        color: var(--clr-rojo-fuerte);
+        font-family: fuente1;
+        margin-left: .9em;
+        font-weight: bolder;
+    }
 }

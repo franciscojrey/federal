@@ -163,6 +163,17 @@ p:last-child {
     font-family: fuente2;
 }
 
+.boton_fondo_celeste {
+    font-family: fuente2;
+    color: var(--clr-blanco);
+    background-color: var(--clr-celeste);
+    padding: .6em .9em;
+    border-radius: 18px;
+    display: inline-block;
+    font-size: .8rem;
+    text-decoration: none;
+}
+
 /* --------------- TYPOGRAPHY END --------------- */
 
 /* --------------- HOMEPAGE STYLES START --------------- */
@@ -269,16 +280,6 @@ p:last-child {
     font-family: fuente2;
     font-size: 1rem;
     line-height: 1.4rem;
-}
-
-.dolar_mep__boton {
-    font-family: fuente2;
-    color: var(--clr-blanco);
-    background-color: var(--clr-celeste);
-    padding: .6em .9em;
-    border-radius: 18px;
-    display: inline-block;
-    font-size: .8rem;
 }
 
 /* --------------- DOLAR MEP END --------------- */
