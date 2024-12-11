@@ -84,72 +84,12 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    padding: 3em 1em;
-}
-
-.section-title {
-    line-height: 1;
-}
-
-/* --------------- CONTACT FORM INPUT NUMBER HIDE ARROWS START --------------- */
-
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-/* --------------- CONTACT FORM INPUT NUMBER HIDE ARROWS END --------------- */
-
-/* --------------- TYPOGRAPHY START --------------- */
-
 h1, 
 h2, 
 h3, 
 h4, 
 p {
     margin: 0;
-}
-
-h2, 
-h3 {
-    line-height: 0.8;
-    letter-spacing: 1px;
-}
-
-h2 {
-    font-size: 3.1rem;
-}
-
-p {
-    margin-bottom: 0.85rem;
-}
-
-p:last-child {
-    margin-bottom: 0;
-}
-
-.mb-7 {
-    margin-bottom: 7vh;
-}
-
-.uppercase {
-    text-transform: uppercase;
-}
-
-.ta-left {
-    text-align: left;
-}
-
-.bold {
-    font-weight: bold;
 }
 
 .boton_fondo_rojo_intermedio {
@@ -173,8 +113,6 @@ p:last-child {
     font-size: .8rem;
     text-decoration: none;
 }
-
-/* --------------- TYPOGRAPHY END --------------- */
 
 /* --------------- HOMEPAGE STYLES START --------------- */
 
