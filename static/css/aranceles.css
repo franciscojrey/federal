@@ -24,6 +24,11 @@
     --ff-titillium: 'Titillium Web', sans-serif;
 }
 
+#aranceles-table-container, 
+.aranceles-container {
+    max-width: 1500px;
+}
+
 /* --------------- ARANCELES START --------------- */
 
 .aranceles-container {
@@ -156,6 +161,54 @@
 
 .aranceles-precio3 { grid-area: aranceles-precio3; }
 
+#aranceles-table-container {
+    padding: 1em;
+    background-color: var(--clr-gris);
+}
+
+.aranceles-table {    
+    border-spacing: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    text-align: left;
+    table-layout: fixed;
+}
+
+.aranceles-table th {
+    color: var(--clr-celeste);
+    font-family: fuente1;
+    padding: 0.75em;
+    text-align: center;
+}
+
+.aranceles-table td {
+    font-family: fuente2;
+    padding: 0.75em;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.aranceles-table th:first-child, 
+.aranceles-table td:first-child,
+.aranceles-table th:nth-child(2),
+.aranceles-table td:nth-child(2),
+.aranceles-table th:nth-child(3),
+.aranceles-table td:nth-child(3) {
+     border-right: 2px solid var(--clr-celeste);
+}
+
+.aranceles-table th:first-child, 
+.aranceles-table td:first-child,
+.aranceles-table th:nth-child(2),
+.aranceles-table td:nth-child(2),
+.aranceles-table th:nth-child(3),
+.aranceles-table td:nth-child(3),
+.aranceles-table th:nth-child(4),
+.aranceles-table td:nth-child(4) {
+    width: 25%;
+}
+
 .aranceles-text p {
     font-size: .7rem;
     color: var(--clr-gris_oscuro);
@@ -168,5 +221,4 @@
 /* Desktop */
 @media (min-width: 769px) {
 
- 
 }

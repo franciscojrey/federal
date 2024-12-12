@@ -165,5 +165,9 @@ p {
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "card img";
-    } 
+    }
+
+    .contacto-card {
+        padding: 4em 2em;
+    }
 }

@@ -135,7 +135,7 @@ p {
     align-items: center;
     grid-gap: 2em;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 4em auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "img"
@@ -148,6 +148,7 @@ p {
     border-radius: 18px;
     border: 1px solid rgb(226, 226, 226);
     padding: 1em;
+    margin: 0 2em;
 }
 
 .home__title {
@@ -169,7 +170,7 @@ p {
 
 .home__img { 
     grid-area: img; 
-    max-width: 400px;
+    max-width: 200px;
     margin: 0 auto;
     width: 100%;
 }
@@ -396,8 +397,8 @@ p {
 
 .acerca_de {
     width:90%;
-    margin: 0 auto;
-    padding: .5em;
+    margin: 4em auto;
+    padding: 2em .5em;
     text-align: left;
 }
 
@@ -775,6 +776,17 @@ p {
     /* --------------- HOMEPAGE STYLES START --------------- */
 
 /* --------------- HOME START --------------- */
+
+.home__box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "container img";
+}
+
+.home__img { 
+    max-width: 400px;
+}
+
 
 /* --------------- HOME END --------------- */
 
