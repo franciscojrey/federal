@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Federal Bursátil</title>
+        <meta name="description" content="Bienvenido a Federal Bursátil. Más de 20 años liderando tu inversión.">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="stylesheet" href="static/css/header.css">
+        <link rel="stylesheet" href="static/css/abrir_cuenta_presencial.css">
+        <!-- LOGO -->
+        <link rel="shortcut icon" type="image/x-icon" href="static/img/LogoFederal.svg">
+
+        <meta name="keywords" content="federal, federal bursátil, federal bursatil, bolsa, acciones, futuros, cauciones, opciones, obligaciones, cedears">
+        <meta property="og:title" content="Federal Bursátil">
+        <meta property="og:description" content="Bienvenido a Federal Bursátil. Más de 20 años liderando tu inversión.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://federalbursatil.com.ar">
+    </head>
+    
+    <body>        
+        
+        <div id="header-container"></div>
+        
+        <main>                      
+            <div class="cuenta-presencial-container">               
+                <h3>Abrí tu cuenta en persona</h3>
+                <img class="cuenta-presencial-imagen" src="static/img/abrir_cuenta_personal/documento.svg" alt="">
+                <p>Comunícate con nosotros para abrir tu cuenta presencial. Deberás completar los formularios que se te enviarán y reenvíarlos al número correspondiente</p>
+                <a class="cuenta-presencial-container-wsp"href=""><img src="static/img/abrir_cuenta_personal/whatsapp.svg" alt=""></a>
+                <a class="cuenta-presencial-container-contactos" href="contacto.html">Otros contactos</a>
+            </div>
+            
+
+            <div id="footer-placeholder"></div>
+
+        </main>
+
+        <!-- CARGAR HEADER -->
+
+        <script>
+            async function loadHeader() {
+                const headerContainer = document.querySelector('#header-container');
+                const response = await fetch('header.html');
+                const headerHTML = await response.text();
+                headerContainer.innerHTML = headerHTML;
+            }
+        
+            loadHeader();
+        </script>
+
+        <script src="static/js/header.js"></script>
+
+        <script src="static/js/aranceles.js"></script>
+
+        <!-- CARGAR FOOTER -->
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+    </body>    
+</html>

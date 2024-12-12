@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fonts/fuente1.otf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fonts/fuente2.ttf);
+}
+
+:root {
+    --clr-rojo-fuerte: #CB0E0E;
+    --clr-rojo-intermedio: #AC2828;
+    --clr-rojo-oscuro: #280000;
+    --clr-celeste: #00B7F3;
+    --clr-celeste-oscuro: #0080BB;
+    --clr-negro: #171818;
+    --clr-gris: #E0E9EC;
+    --clr-gris_oscuro: #647276;
+    --clr-blanco: #FCFEFE;
+    --ff-title: 'Oswald', sans-serif;
+    --ff-serif: 'Open Sans', serif;
+    --ff-logo: Helvetica;
+    --ff-titillium: 'Titillium Web', sans-serif;
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    font-family: fuente2;
+}
+
+p {
+    font-family: fuente2;
+    color: var(--clr-negro);
+    text-align: left;
+}
+
+/* --------------- CONTACTO START --------------- */
+
+.cuenta-presencial-container {   
+    margin: 4em auto 4em auto;
+    max-width: 1500px;
+    padding: 0 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "titulo img"
+    "texto texto"
+    "btn-wsp btn-contactos";
+}
+
+.cuenta-presencial-container img{ 
+    grid-area: img; 
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.cuenta-presencial-container h3 {
+    grid-area: titulo;
+    font-family: fuente1;
+    color: var(--clr-rojo-intermedio);
+    margin-bottom: .5em;
+}
+
+.cuenta-presencial-container p {
+    grid-area: texto;
+}
+
+.cuenta-presencial-container-wsp {
+    grid-area: btn-wsp;
+    background-color: var(--clr-celeste);
+    border-radius: 200px;
+}
+
+.cuenta-presencial-container-contactos {
+    grid-area: btn-contactos
+}
+
+/* --------------- CONTACTO END --------------- */
+
+/* Desktop */
+@media (min-width: 769px) {
+    .cuenta-presencial-container {   
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "titulo titulo img"
+        "texto texto img"
+        "btn-wsp btn-contactos img";
+    }
+}

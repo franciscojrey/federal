@@ -121,7 +121,7 @@
 }
 
 .aranceles-titulo {
-    color: var(--clr-rojo-intermedio);
+    color: var(--clr-gris_oscuro);
     font-size: .9rem;
     grid-area: aranceles-titulo;
     font-family: fuente1;

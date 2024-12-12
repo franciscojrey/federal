@@ -135,9 +135,10 @@ p {
     display: inline-grid;
     justify-items: center;
     align-items: center;
+    max-width: 1500px;
     grid-gap: 2em;
     width: 100%;
-    margin: 0 auto 4em auto;
+    margin: 4em auto 4em auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "img"
@@ -532,9 +533,7 @@ p {
 
 .opera__box {
     display: inline-grid;
-    justify-items: center;
-    align-items: center;
-    grid-gap: 2em;
+    gap: 2em;
     width: 100%;
     margin: 0 auto;
     grid-template-columns: 1fr;
@@ -780,6 +779,8 @@ p {
 /* --------------- HOME START --------------- */
 
 .home__box {
+    margin-top: 8em;
+    text-align: left;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
     "container img";
@@ -807,11 +808,15 @@ p {
 
 /* --------------- ACERCA DE START --------------- */
 
+.acerca_de {
+    max-width: 800px;
+}
+
+.acerca_de__box {
+    gap: 4em;
+}
+
 /* --------------- ACERCA DE END --------------- */
-
-/* --------------- ABOUT-US START --------------- */
-
-/* --------------- ABOUT US END --------------- */
 
 /* --------------- OPERA START --------------- */
 
