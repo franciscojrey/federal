@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fonts/fuente1.otf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fonts/fuente2.ttf);
+}
+
+:root {
+    --clr-rojo-fuerte: #CB0E0E;
+    --clr-rojo-intermedio: #AC2828;
+    --clr-rojo-oscuro: #280000;
+    --clr-celeste: #00B7F3;
+    --clr-celeste-oscuro: #0080BB;
+    --clr-negro: #171818;
+    --clr-gris: #E0E9EC;
+    --clr-gris_oscuro: #647276;
+    --clr-blanco: #FCFEFE;
+    --ff-title: 'Oswald', sans-serif;
+    --ff-serif: 'Open Sans', serif;
+    --ff-logo: Helvetica;
+    --ff-titillium: 'Titillium Web', sans-serif;
+}
+
+#terminos-condiciones-table-container, 
+.terminos-condiciones-container {
+    max-width: 1500px;
+}
+
+/* --------------- terminos-condiciones START --------------- */
+
+.terminos-condiciones-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 4em auto 4em auto;
+    padding: 0 1em;
+    grid-auto-rows: auto;
+}
+
+.terminos-condiciones-texto {
+    text-align: left;
+}
+
+.terminos-condiciones-texto h3{
+    font-family: fuente1;
+    color: var(--clr-negro);
+    font-size: 2rem;
+    margin: .8em 0;
+}
+
+.terminos-condiciones-texto h4 {
+    font-family: fuente1;
+    color: var(--clr-negro);
+    font-size: 1.1rem;
+    margin-bottom: .4em;
+}
+
+.terminos-condiciones-texto p {
+    font-size: .9rem;
+    color: var(--clr-negro);
+    font-family: fuente2;
+    margin-bottom: 1.4em;
+}
+
+.terminos-condiciones-texto a {
+    color: var(--clr-rojo-fuerte);
+}
+
+/* --------------- terminos-condiciones END --------------- */
+
+/* Desktop */
+@media (min-width: 769px) {
+
+}

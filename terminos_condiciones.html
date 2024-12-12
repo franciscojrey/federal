@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Federal Bursátil</title>
+        <meta name="description" content="Bienvenido a Federal Bursátil. Más de 20 años liderando tu inversión.">
+
+        <!-- STYLES -->
+        <link rel="stylesheet" href="static/css/styles.css">
+        <link rel="stylesheet" href="static/css/header.css">
+        <link rel="stylesheet" href="static/css/terminos_condiciones.css">
+        <!-- LOGO -->
+        <link rel="shortcut icon" type="image/x-icon" href="static/img/LogoFederal.svg">
+
+        <meta name="keywords" content="federal, federal bursátil, federal bursatil, bolsa, acciones, futuros, cauciones, opciones, obligaciones, cedears">
+        <meta property="og:title" content="Federal Bursátil">
+        <meta property="og:description" content="Bienvenido a Federal Bursátil. Más de 20 años liderando tu inversión.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://federalbursatil.com.ar">
+    </head>
+    
+    <body>        
+        
+        <div id="header-container"></div>
+        
+        <main>                      
+            <div class="terminos-condiciones-container">
+
+                <div class="terminos-condiciones-texto">
+                    <h3>Términos y Condiciones y Políticas de Privacidad</h3>
+                    <p>
+                        La actividad bursátil se desarrolla de acuerdo a la normativa vigente tanto de la Comisión Nacional de Valores, de la UIF, 
+                        de la AFIP, del BYMA y de los distintos mercados en la cual realiza sus operaciones (en la parte inferior de la página se 
+                        encuentran los distintos enlaces para acceder a los mismos). La sociedad cuenta con un manual de control interno, código de 
+                        conducta, manual de procedimientos y manual de prevención de lavado de activos que se pueden consultar en la autopista 
+                        financiera de la página web de la Comisión Nacional de Valores. Asimismo, en dicha web se puede consultar toda la información 
+                        pública relevante de nuestra sociedad.
+                    </p>
+                    <h4>
+                        CONSENTIMIENTO INFORMADO
+                    </h4>
+                    <p>
+                        Por medio del presente, en mi carácter de TÍTULAR DE LOS DATOS presto mi CONSENTIMIENTO para que “Federal Bursatil S.A.” en
+                         su carácter de CESIONARIO confronte mis datos personales que se indican en párrafo siguiente con la base de datos del RENAPER, 
+                         conforme a las especificaciones que a continuación se detallan:
+                    </p>
+                    <h4>
+                        DATOS AUTORIZADOS
+                    </h4>
+                    <p>
+                        El presente consentimiento para el tratamiento de mis datos personales alcanza a los incluidos en mi Documento Nacional de Identidad
+                         (INCLUYENDO DATOS BIOMETRICOS DE HUELLA DACTILAR Y DE RECONOCIMIENTO FACIAL) en confronte con lo que informa el web service del REGISTRO 
+                         NACIONAL DE LAS PERSONAS.
+                    </p>
+                    <h4>
+                        INFORMACIÓN SOBRE EL TRATAMIENTO
+                    </h4>
+                    <p>
+                        1. Los datos serán tratados con la exclusiva finalidad de validar mi identidad y verificar la vigencia de mi Documento Nacional de Identidad 
+                        para los usuarios que envíen una solicitud de apertura de una cuenta comitente mediante el formulario web del sitio de 'Federal B.'.
+                        2. Los datos confrontados serán destruidos una vez verificada la validez del Documento Nacional de Identidad y validada la misma, no pudiendo 
+                        ser almacenados.
+                        3. Los datos son facilitados con carácter obligatorio, por cuanto es imprescindible identificar fehacientemente al titular, para asegurar el 
+                        correcto proceso de identificación.
+                        4. El titular de los datos podrá ejercer los derechos de acceso, rectificación y supresión de sus datos en cualquier momento y a su sola 
+                        solicitud ante el RENAPER.
+                        5. En cumplimiento de la Resolución AAIP Nº 14/2018, le hacemos saber que la AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de 
+                        Órgano de Control de la Ley N° 25.326, tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados 
+                        en sus derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.
+                    </p>
+
+                    <a href="static/pdf/CONDICIONES GENERALES.pdf" target="_blank">CONDICIONES_GENERALES.pdf</a>
+
+                    <h3>Políticas de Privacidad</h3>
+                </div>
+            
+            </div>
+            
+
+            <div id="footer-placeholder"></div>
+
+        </main>
+
+        <!-- CARGAR HEADER -->
+
+        <script>
+            async function loadHeader() {
+                const headerContainer = document.querySelector('#header-container');
+                const response = await fetch('header.html');
+                const headerHTML = await response.text();
+                headerContainer.innerHTML = headerHTML;
+            }
+        
+            loadHeader();
+        </script>
+
+        <script src="static/js/header.js"></script>
+
+        <script src="static/js/aranceles.js"></script>
+
+        <!-- CARGAR FOOTER -->
+
+        <script>
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-placeholder').innerHTML = data;
+                });
+        </script>
+    </body>    
+</html>
