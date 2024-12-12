@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fonts/fuente1.otf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fonts/fuente2.ttf);
+}
+
+:root {
+    --clr-rojo-fuerte: #CB0E0E;
+    --clr-rojo-intermedio: #AC2828;
+    --clr-rojo-oscuro: #280000;
+    --clr-celeste: #00B7F3;
+    --clr-celeste-oscuro: #0080BB;
+    --clr-negro: #171818;
+    --clr-gris: #E0E9EC;
+    --clr-gris_oscuro: #647276;
+    --clr-blanco: #FCFEFE;
+    --ff-title: 'Oswald', sans-serif;
+    --ff-serif: 'Open Sans', serif;
+    --ff-logo: Helvetica;
+    --ff-titillium: 'Titillium Web', sans-serif;
+}
+
+/* --------------- contacto START --------------- */
+
+.contacto-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 4em auto 4em auto;
+    padding: 0 1em;
+    grid-auto-rows: auto;
+}
+
+.contacto-imagen { 
+    grid-area: img; 
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.contacto-card {
+    border: 1px solid var(--clr-rojo-fuerte);
+    border-radius: 18px;
+    padding: 2em;
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 233, 233));
+    margin-bottom: 4em;
+}
+
+.contacto-card h3 {
+    font-family: fuente1;
+    color: var(--clr-rojo-intermedio);
+    font-size: 1.8em;
+    margin-bottom: .5em;
+}
+
+p {
+    font-family: fuente2;
+    color : var(--clr-negro)
+}
+
+.contacto-subtitulo {
+    color: var(--clr-celeste-oscuro);
+    font-weight: bolder;
+    display: flex;
+    margin-bottom: .8em;
+}
+
+.contacto-datos {
+    width: 100%;
+    text-align: left;
+}
+
+.contacto-datos p {
+    margin-bottom: .8em;
+}
+
+.contacto-subtitulo img {
+    margin-left: 1em;
+}
+
+.contacto-datos-red {
+    min-width: 40px;
+}
+
+#contacto-datos-red2,
+#contacto-datos-red3 {
+    margin-left:1em;    
+}
+
+
+
+/**/
+
+
+/* --------------- contacto END --------------- */
+
+/* Desktop */
+@media (min-width: 769px) {
+
+ 
+}
