@@ -24,16 +24,35 @@
     --ff-titillium: 'Titillium Web', sans-serif;
 }
 
-/* --------------- contacto START --------------- */
 
-.contacto-container {
+h3 {
+    font-size: 1.2rem;
+    font-family: fuente2;
+}
+
+p {
+    font-family: fuente2;
+    color: var(--clr-negro);
+    text-align: left;
+}
+
+/* --------------- CONTACTO START --------------- */
+
+.contacto-container {   
+    margin: 4em auto 4em auto;
+    max-width: 1500px;
+    padding: 0 1em;
+}
+
+.contacto-card-imagen {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1em;
-    margin: 4em auto 4em auto;
-    padding: 0 1em;
-    grid-auto-rows: auto;
+    grid-template-areas: 
+    "img"
+    "card";
 }
+
 
 .contacto-imagen { 
     grid-area: img; 
@@ -42,6 +61,7 @@
 }
 
 .contacto-card {
+    grid-area: card;
     border: 1px solid var(--clr-rojo-fuerte);
     border-radius: 18px;
     padding: 2em;
@@ -52,13 +72,7 @@
 .contacto-card h3 {
     font-family: fuente1;
     color: var(--clr-rojo-intermedio);
-    font-size: 1.8em;
     margin-bottom: .5em;
-}
-
-p {
-    font-family: fuente2;
-    color : var(--clr-negro)
 }
 
 .contacto-subtitulo {
@@ -90,15 +104,66 @@ p {
     margin-left:1em;    
 }
 
+.contacto-formulario {
+    border-top: 1px solid var(--clr-celeste);
+    padding-top: 2em;
+    margin-top: 2em;
+}
 
+.contacto-formulario-titulo {
+    color: var(--clr-rojo-intermedio);
+    margin-bottom: .5em;
+}
 
-/**/
+.contacto-formulario-horario {
+    color: var(--clr-gris_oscuro);
+    margin: 1em 0;
+    font-size: .9rem;
+}
 
+.contacto-formulario-item {
+    margin-bottom: 1.5em;
+}
 
-/* --------------- contacto END --------------- */
+.contacto-formulario-item p {
+    font-size: 0.9rem;
+    color: var(--clr-negro);
+    margin-bottom: 0.5em;
+}
+
+.contacto-formulario-input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid var(--clr-negro);
+    border-radius: 18px;
+    font-size: 0.9rem;
+    font-family: fuente2;
+    color: var(--clr-negro);
+    transition: border-color 0.3s ease;
+}
+
+.contacto-formulario-input:focus {
+    border-color: var(--clr-celeste);
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 120, 215, 0.2);
+}
+
+.contacto-formulario textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contacto-formulario button {
+    background-color: white;
+}
+
+/* --------------- CONTACTO END --------------- */
 
 /* Desktop */
 @media (min-width: 769px) {
-
- 
+    .contacto-card-imagen {        
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card img";
+    } 
 }

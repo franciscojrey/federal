@@ -114,6 +114,18 @@ p {
     text-decoration: none;
 }
 
+.boton_transparente_borde_rojo {
+    font-family: fuente2;
+    color: var(--clr-rojo-intermedio);
+    border: 1px solid var(--clr-rojo-intermedio);
+    padding: .6em .9em;
+    border-radius: 18px;
+    display: inline-block;
+    font-size: .8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* --------------- HOMEPAGE STYLES START --------------- */
 
 /* --------------- HOME START --------------- */
@@ -424,16 +436,6 @@ p {
     font-family: fuente2;
     font-size: 1rem;
     line-height: 1.4rem;
-}
-
-.acerca_de__boton {
-    font-family: fuente2;
-    color: var(--clr-rojo-intermedio);
-    border: 1px solid var(--clr-rojo-intermedio);
-    padding: .6em .9em;
-    border-radius: 18px;
-    display: inline-block;
-    font-size: .8rem;
 }
 
 /* --------------- ACERCA DE END --------------- */

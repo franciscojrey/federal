@@ -71,7 +71,49 @@
                     <img class="contacto-datos-red" id="contacto-datos-red3" src="static/img/contacto/facebook.svg" alt="">
                 </div>
 
-                <div class="contacto-formulario"></div>
+                <div class="contacto-formulario">
+                    <form action="enviar_mail.php" method="post" class="form">
+                        <h3 class="contacto-formulario-titulo">¿Tenés alguna consulta en especial?</h3>
+                        <p>Completa el siguiente formulario. Lo recibiremos en nuestra casilla de correos de consulta y dudas.</p>
+                        <p class="contacto-formulario-horario">Horario de atención de 11:00 a 17:00 hrs.</p>
+                        <!--
+                        <?php
+                        if (!isset($_GET['contact'])) {
+                        }
+                        else {
+                            $contactCheck = $_GET['contact'];
+                            if ($contactCheck == "empty") {
+                                echo "<div class='contact-message-box'><p class='contact-message error'>Debe completar todos los campos.</p></div>";
+                            }
+                            elseif ($contactCheck == "success") {
+                                echo "<div class='contact-message-box'><p class='contact-message success'>Gracias por contactarse con nosotros. Le responderemos a la brevedad.</p></div>";
+                            }
+                        }
+                        ?>
+                        -->
+                        <div class="contacto-formulario-item">
+                            <p>Nombre</p>
+                            <input type="text" class="contacto-formulario-input" name="nombre" placeholder="Nombre" aria-label="nombre" required minlength="2">
+                        </div>
+
+                        <div class="contacto-formulario-item">
+                            <p>Email</p>
+                            <input type="text" class="contacto-formulario-input" name="email" placeholder="Email" aria-label="email" required minlength="4">
+                        </div>
+                        
+                        <div class="form__item">
+                            <p>Asunto</p>
+                            <input type="text" class="contacto-formulario-input" name="asunto" aria-label="subject" required minlength="2">
+                        </div>
+                        
+                        <div class="contacto-formulario-item">
+                            <p>Duda</p>
+                            <textarea class="contacto-formulario-input" name="duda" placeholder="Escribí tu duda acá" aria-label="mensaje" required minlength="4"></textarea>
+                        </div>                        
+                        
+                        <button class="boton_transparente_borde_rojo" type="submit" name="enviar">Enviar</button>
+                    </form>  
+                </div>
             </div>
             
 
