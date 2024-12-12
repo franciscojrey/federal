@@ -24,15 +24,43 @@
         
         <div id="header-container"></div>
         
-        <main>                      
-            <div class="cuenta-presencial-container">               
-                <h3>Abrí tu cuenta en persona</h3>
-                <img class="cuenta-presencial-imagen" src="static/img/abrir_cuenta_personal/documento.svg" alt="">
-                <p>Comunícate con nosotros para abrir tu cuenta presencial. Deberás completar los formularios que se te enviarán y reenvíarlos al número correspondiente</p>
-                <a class="cuenta-presencial-container-wsp" href=""><img class="cuenta-presencial-container-wsp-img" src="static/img/abrir_cuenta_personal/whatsapp.svg" alt=""></a>
-                <a class="cuenta-presencial-container-contactos boton_fondo_rojo_intermedio" href="contacto.html">Otros contactos</a>
-            </div>
-            
+        <main>         
+            <div class="cuenta-presencial-container">
+                <div class="cuenta-presencial-hero">               
+                    <h3>Abrí tu cuenta en persona</h3>
+                    <img class="cuenta-presencial-imagen" src="static/img/abrir_cuenta_personal/documento.svg" alt="">
+                    <p>Comunícate con nosotros para abrir tu cuenta presencial. Deberás completar los formularios que se te enviarán y reenvíarlos al número correspondiente</p>
+                    <a class="cuenta-presencial-hero-wsp" href=""><img class="cuenta-presencial-hero-wsp-img" src="static/img/abrir_cuenta_personal/whatsapp.svg" alt=""></a>
+                    <a class="cuenta-presencial-hero-contactos boton_fondo_rojo_intermedio" href="contacto.html">Otros contactos</a>
+                </div>
+    
+                <div class="documentacion-container">
+                    <h3>Documentación a adjuntar para la apertura de al cuenta comitente</h3>
+                    <div class="documentacion-box">
+                        <div class="documentacion-card" id="documentacion-fisica">
+                            <p class="documentacion-titulo" onclick="elegirOpcion('fisica')">Persona física <span class="documentacion-flecha">&#10095;</span></p>
+                            <div class="documentacion-texto">
+                                <p>Completar y firmar todas las páginas que componen el legajo de tu cuenta</p>
+                                <p>DNI actualizado</p>
+                                <p>En caso de no constar el domicilio en su DNI se deberá adjuntar algún servicio que lo acredite</p>
+                                <p>Constancia de CBU de la cuenta banacaria en pesos (y dólares en caso de corresponder)</p>
+                                <p>Documentación de respaldo de los fondos girados (en caso de corresponder)</p>
+                            </div>
+                        </div>
+        
+                        <div class="documentacion-card" id="documentacion-juridica">
+                            <p class="documentacion-titulo" onclick="elegirOpcion('juridica')"><span class="documentacion-flecha">&#10094;</span> Persona jurídica</p>
+                            <div class="documentacion-texto">
+                                <p>Completar y firmar todas las páginas que componen el legajo de tu cuenta</p>
+                                <p>Servicio que acredite el domicilio de la empresa</p>
+                                <p>Actas y/o poderes actualizados que acrediten el representante legal</p>
+                                <p>último balance certificado</p>
+                                <p>Documentación de respaldo de los fondos girados (en caso de corresponder)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>                         
 
             <div id="footer-placeholder"></div>
 
@@ -53,7 +81,7 @@
 
         <script src="static/js/header.js"></script>
 
-        <script src="static/js/aranceles.js"></script>
+        <script src="static/js/abrir_cuenta_presencial.js"></script>
 
         <!-- CARGAR FOOTER -->
 

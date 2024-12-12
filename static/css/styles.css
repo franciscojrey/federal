@@ -555,10 +555,14 @@ p {
 
 /* --------------- FOOTER START --------------- */
 
+.informacion-container {
+    background-color: rgb(27, 27, 27);
+}
+
 .informacion {
     width:100%;
+    max-width: 1500px;
     text-align: left;
-    background-color: rgb(27, 27, 27);
     padding: 1em;
     display: inline-grid;
     align-items: center;

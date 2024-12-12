@@ -30,18 +30,16 @@ h3 {
     font-family: fuente2;
 }
 
-p {
-    font-family: fuente2;
-    color: var(--clr-negro);
-    text-align: left;
+.cuenta-presencial-container{
+    padding: 0 1em;
+    max-width: 1500px;
+    margin: 10em auto 4em auto;
 }
 
-/* --------------- CONTACTO START --------------- */
+/* --------------- CUENTA PRESENCIAL START --------------- */
 
-.cuenta-presencial-container {   
+.cuenta-presencial-hero {   
     margin: 8em auto 4em auto;
-    max-width: 1500px;
-    padding: 0 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
@@ -51,13 +49,13 @@ p {
     "btn-wsp btn-contactos";
 }
 
-.cuenta-presencial-container img{ 
+.cuenta-presencial-hero img{ 
     grid-area: img; 
     max-width: 100px;
     margin: 0 auto;
 }
 
-.cuenta-presencial-container h3 {
+.cuenta-presencial-hero h3 {
     grid-area: titulo;
     font-family: fuente1;
     color: var(--clr-rojo-intermedio);
@@ -66,37 +64,88 @@ p {
     text-align: left;
 }
 
-.cuenta-presencial-container p {
+.cuenta-presencial-hero p {
     grid-area: texto;
     font-family: fuente2;
-}
-
-.cuenta-presencial-container-wsp {
     text-align: left;
 }
 
-.cuenta-presencial-container-wsp-img {
+.cuenta-presencial-hero-wsp {
+    text-align: left;
+}
+
+.cuenta-presencial-hero-wsp-img {
     grid-area: btn-wsp;
     background-color: var(--clr-celeste);
-    width: 8; /* Set the width */
-    height: 80px; /* Set the height (same as width) */
-    border-radius: 50%; /* Makes it round */
+    width: 8;
+    height: 80px;
+    border-radius: 50%;
     padding: .9em;
 }
 
-.cuenta-presencial-container-contactos {
+.cuenta-presencial-hero-contactos {
     grid-area: btn-contactos
 }
 
-/* --------------- CONTACTO END --------------- */
+/* --------------- DOCUMENTACIÓN START --------------- */
+
+.documentacion-box {
+    justify-content: space-around;
+}
+
+
+.documentacion-container h3 {
+    font-family: fuente2;
+    color: var(--clr-negro);
+    margin: 2em 0;
+}
+
+.documentacion-titulo {
+    cursor: pointer;
+    font-family: fuente1;
+    font-weight: bold;
+    color: var(--clr-celeste);
+}
+
+.documentacion-texto {
+    text-align: center;
+}
+
+.documentacion-texto p {
+    margin: 1em 0;
+    background-color: var(--clr-gris);
+    padding: 1em 2em;
+    font-family: fuente2;
+    color: var(--clr-negro);
+    border-radius: 18px;
+}
+
+/* --------------- DOCUMENTACIÓN END --------------- */
+
+
+/* --------------- CUENTA PRESENCIAL END --------------- */
 
 /* Desktop */
 @media (min-width: 769px) {
-    .cuenta-presencial-container {   
+    .cuenta-presencial-hero {   
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "titulo titulo img"
         "texto texto img"
         "btn-wsp btn-contactos img";
+    }
+
+    
+    .documentacion-box {
+        display: flex;
+        gap: 4em;
+    }
+
+    .documentacion-titulo {
+        cursor: auto;
+    }
+
+    .documentacion-flecha {
+        display: none;
     }
 }
