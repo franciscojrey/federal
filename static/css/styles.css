@@ -656,6 +656,7 @@ p {
 
 .logo_texto {
     width:100%;
+    max-width: 400px;
     margin: 0 auto;
     text-align: left;
     padding: 1em 0;
@@ -915,8 +916,7 @@ p {
 
 /* --------------- LOGO TEXTO START --------------- */
 
-.logo_texto {
-    width:20%;
+.logo_texto {    
     margin: 0 auto;
     text-align: left;
     padding: 1em 0;
