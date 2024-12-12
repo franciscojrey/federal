@@ -209,6 +209,13 @@
     width: 25%;
 }
 
+.aranceles-table-separador td:first-child,
+.aranceles-table-separador td:nth-child(2),
+.aranceles-table-separador td:nth-child(3) {
+    border-right: 1px solid var(--clr-gris);
+
+}
+
 .aranceles-text p {
     font-size: .7rem;
     color: var(--clr-gris_oscuro);
