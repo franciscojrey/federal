@@ -39,7 +39,7 @@ p {
 /* --------------- CONTACTO START --------------- */
 
 .cuenta-presencial-container {   
-    margin: 4em auto 4em auto;
+    margin: 8em auto 4em auto;
     max-width: 1500px;
     padding: 0 1em;
     display: grid;
@@ -62,16 +62,26 @@ p {
     font-family: fuente1;
     color: var(--clr-rojo-intermedio);
     margin-bottom: .5em;
+    font-size: 1.8rem;
+    text-align: left;
 }
 
 .cuenta-presencial-container p {
     grid-area: texto;
+    font-family: fuente2;
 }
 
 .cuenta-presencial-container-wsp {
+    text-align: left;
+}
+
+.cuenta-presencial-container-wsp-img {
     grid-area: btn-wsp;
     background-color: var(--clr-celeste);
-    border-radius: 200px;
+    width: 8; /* Set the width */
+    height: 80px; /* Set the height (same as width) */
+    border-radius: 50%; /* Makes it round */
+    padding: .9em;
 }
 
 .cuenta-presencial-container-contactos {
