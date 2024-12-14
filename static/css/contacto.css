@@ -1,8 +1,3 @@
-h3 {
-    font-size: 1.2rem;
-    font-family: fuente2;
-}
-
 /* --------------- CONTACTO START --------------- */
 
 .contacto-container {   
@@ -32,7 +27,6 @@ h3 {
     padding: 2em;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 233, 233));
     margin-bottom: 4em;
-    font-family: fuente2;
     color: var(--clr-negro);
 }
 
@@ -40,13 +34,12 @@ h3 {
     font-family: fuente1;
     color: var(--clr-rojo-intermedio);
     margin-bottom: .5em;
+    font-size: var(--fs-mobile-2);
 }
 
-.contacto-subtitulo {
-    color: var(--clr-celeste-oscuro);
-    font-weight: bolder;
-    display: flex;
-    margin-bottom: .8em;
+.contacto-card p {
+    font-family: fuente2;
+    font-size: var(--fs-mobile-5);
 }
 
 .contacto-datos {
@@ -54,8 +47,23 @@ h3 {
     text-align: left;
 }
 
+.contacto-subtitulo {
+    display: flex;
+    margin-bottom: .8em;
+}
+
+.contacto-subtitulo h3 {
+    color: var(--clr-celeste-oscuro);
+    font-weight: bolder;
+    font-family: fuente1;
+    font-size: var(--fs-mobile-4);
+}
+
 .contacto-datos p {
     margin-bottom: .8em;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-5);
+    font-family: fuente2;
 }
 
 .contacto-subtitulo img {
@@ -79,21 +87,23 @@ h3 {
 
 .contacto-formulario-titulo {
     color: var(--clr-rojo-intermedio);
+    font-size: var(--fs-mobile-4);
     margin-bottom: .5em;
-    font-family: fuente2;
+    font-family: fuente1;
     text-align: left;
 }
 
-.contacto-formulario p {
+.contacto-formulario-subtitulo {
     font-family: fuente2;
     color: var(--clr-negro);
     text-align: left;
+    font-size: var(--fs-mobile-5);
 }
 
 .contacto-formulario-horario {
     color: var(--clr-gris-oscuro);
     margin: 1em 0;
-    font-size: .9rem;
+    font-size: var(--fs-mobile-6);
     font-family: fuente2;
     text-align: left;
 }
@@ -103,9 +113,11 @@ h3 {
 }
 
 .contacto-formulario-item p {
-    font-size: 0.9rem;
+    font-size: var(--fs-mobile-6);
     color: var(--clr-negro);
     margin-bottom: 0.5em;
+    text-align: left;
+    font-family: fuente2;
 }
 
 .contacto-formulario-input {
@@ -113,7 +125,7 @@ h3 {
     padding: 0.8em;
     border: 1px solid var(--clr-negro);
     border-radius: 18px;
-    font-size: 0.9rem;
+    font-size: var(--fs-mobile-6);
     font-family: fuente2;
     color: var(--clr-negro);
     transition: border-color 0.3s ease;

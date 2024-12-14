@@ -49,7 +49,7 @@ header {
     color: var(--clr-primary);
     border: none;
     border-radius: 4px;
-    font-size: 0.9em;
+    font-size: var(--fs-mobile-5);
     font-weight: bold;
     cursor: pointer;
     float: right;
@@ -57,7 +57,7 @@ header {
 }
 
 .ingresar {
-    color: var(--clr-rojo-fuerte);
+    color: var(--clr-rojo-intermedio);
 }
 
 .abrir {
@@ -67,7 +67,7 @@ header {
 }
 
 .hamburguesa {
-    font-size: 1.5em;
+    font-size: var(--fs-mobile-1);
     background: none;
     border: none;
     color: var(--clr-secondary);
@@ -112,7 +112,6 @@ header {
     align-items: center;
     width: 100%;
     border-bottom: 1px solid white;
-    font-size: .8rem;
     padding-bottom: .5em;
 }
 
@@ -122,8 +121,7 @@ header {
 }
 
 .dropdown-header span {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: var(--fs-mobile-5);
 }
 
 .submenu {
@@ -144,22 +142,21 @@ header {
 .submenu a {
     text-decoration: none;
     color: var(--clr-negro);
-    font-size: .8em;
+    font-size: var(--fs-mobile-5);
     padding: 0.2em 0;
     font-family: fuente2;
 }
 
 .submenu a:hover {
-    background-color: var(--clr-hover);
     border-radius: 4px;
 }
 
 .cerrar-menu {
     align-self: flex-end;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     background: none;
     border: none;
-    color: var(--clr-secondary);
+    color: var(--clr-rojo-oscuro);
     cursor: pointer;
 }
 

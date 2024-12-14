@@ -16,9 +16,14 @@ html {
     src: url(../fonts/fuente2.ttf);
 }
 
+@font-face {
+    font-family: 'fuente3';
+    src: url(../fonts/fuente3.ttf);
+}
+
 :root {
     --clr-rojo-fuerte: #CB0E0E;
-    --clr-rojo-intermedio: #AC2828;
+    --clr-rojo-intermedio: #E94732;
     --clr-rojo-oscuro: #280000;
     --clr-celeste: #00B7F3;
     --clr-celeste-oscuro: #0080BB;
@@ -34,14 +39,15 @@ html {
     --fs-mobile-4: 1.125rem; /* 18px */
     --fs-mobile-5: 1rem; /* 16px */
     --fs-mobile-6: .875rem; /* 14px */
+    --fs-mobile-7: .5625rem; /* 9px */
 }
 
 .rojo-fuerte{
-    color: #CB0E0E;
+    color: #D01A1C;
 }
 
 .rojo-intermedio{
-    color: #AC2828;
+    color: #E94732;
 }
 
 .rojo-oscuro {

@@ -33,7 +33,7 @@ h3 {
     font-family: fuente1;
     color: var(--clr-rojo-intermedio);
     margin-bottom: .5em;
-    font-size: 1.8rem;
+    font-size: var(--fs-mobile-2);
     text-align: left;
 }
 
@@ -41,6 +41,8 @@ h3 {
     grid-area: texto;
     font-family: fuente2;
     text-align: left;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-5);
 }
 
 .cuenta-presencial-hero-wsp {
@@ -68,9 +70,10 @@ h3 {
 
 
 .documentacion-container h3 {
-    font-family: fuente2;
+    font-family: fuente1;
     color: var(--clr-negro);
     margin: 2em 0;
+    font-size: var(--fs-mobile-3);
 }
 
 .documentacion-titulo {
@@ -78,6 +81,7 @@ h3 {
     font-family: fuente1;
     font-weight: bold;
     color: var(--clr-celeste);
+    font-size: var(--fs-mobile-4);
 }
 
 .documentacion-texto {
@@ -91,6 +95,7 @@ h3 {
     font-family: fuente2;
     color: var(--clr-negro);
     border-radius: 18px;
+    font-size: var(--fs-mobile-5);
 }
 
 /* --------------- DOCUMENTACIÓN END --------------- */

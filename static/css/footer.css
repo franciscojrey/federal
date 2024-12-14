@@ -31,7 +31,7 @@
 .footer-informacion-bloque4 { grid-area: bloque4; }
 
 .footer-informacion-titulo {
-    font-size: var(--fs-mobile-5);
+    font-size: var(--fs-mobile-3);
     font-family: fuente1;
     color: var(--clr-blanco);
     letter-spacing: 2px;
@@ -44,7 +44,7 @@
 .footer-informacion-descripcion {
     color: var(--clr-blanco);
     font-family: fuente2;
-    font-size: .9rem;
+    font-size: var(--fs-mobile-5);
     margin-bottom: .3em;
     font-weight: 400;
 }
@@ -59,7 +59,7 @@
     padding: 0.50em 1em;
     border: 1px solid #ccc;
     border-radius: 12px;
-    font-size: .8rem;
+    font-size: var(--fs-mobile-5);
     font-family: fuente2;
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -112,7 +112,7 @@
 .footer-logo-texto-descripcion {
     margin-bottom: 1rem;
     color: var(--clr-blanco);
-    font-size: .7rem;
+    font-size: var(--fs-mobile-6);
     font-family: fuente2;
 }
 
@@ -144,12 +144,16 @@
     text-align: center;
     color: var(--clr-gris-oscuro);
     font-family: fuente2;
-    font-size: .7rem;
+    font-size: var(--fs-mobile-6);
     margin: 0 auto;
 }
 
+.footer-contacto-informacion p {
+    margin-bottom: 1em;
+}
+
 .footer-contacto-informacion a{
-    text-decoration: underline;
+    text-decoration: underline;    
     color: var(--clr-gris-oscuro);
 }
 
@@ -209,10 +213,10 @@
 /* --------------- COPYRIGHT START --------------- */
 
 .footer-copyright{
-    color:var(--clr-blanco);
-    font-family: fuente2;
-    font-size: .7rem;
-    padding-bottom: 1em;
+    color: var(--clr-blanco);
+    font-family: fuente3;
+    font-size: var(--fs-mobile-7);
+    padding-bottom: 4em;
 }
 
 /* --------------- COPYRIGHT START --------------- */
