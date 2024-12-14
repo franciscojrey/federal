@@ -1,0 +1,146 @@
+/* --------------- FOOTER START --------------- */
+
+.informacion-container {
+    background-color: rgb(27, 27, 27);
+}
+
+.informacion {
+    width:100%;
+    max-width: 1500px;
+    text-align: left;
+    padding: 1em;
+    display: inline-grid;
+    align-items: center;
+    margin: 0 auto;
+    grid-gap: 1em;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "bloque1"
+    "bloque2"
+    "bloque3"
+    "bloque4"
+    "redes"
+    "logo_texto"
+    "contacto_informacion"
+}
+
+.informacion_bloque1 { grid-area: bloque1; }
+.informacion_bloque2 { grid-area: bloque2; }
+.informacion_bloque3 { grid-area: bloque3; }
+.informacion_bloque4 { grid-area: bloque4; }
+
+
+.informacion__titulo {
+    font-size: 1.3rem;
+    font-family: fuente1;
+    color: var(--clr-blanco);
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin-bottom: .5em;
+    margin-top: .8em;
+    line-height: 1.5em;
+}
+
+.informacion__descripcion {
+    color: var(--clr-blanco);
+    font-family: fuente2;
+    font-size: .9rem;
+    margin-bottom: .3em;
+    font-weight: 400;
+}
+
+.informacion__descripcion a {
+    text-decoration: none;
+    color: var(--clr-blanco);
+}
+
+.informacion_input {
+    width: 80%;
+    padding: 0.50em 1em;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: .8rem;
+    font-family: fuente2;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--clr-blanco);
+    color: var(--clr-gris-oscuro);
+}
+
+.informacion_input::placeholder {
+    color: var(--clr-gris-oscuro);
+}
+
+.informacion_input:focus {
+    border-color: #007BFF;
+}
+
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    /* --------------- FOOTER START --------------- */
+
+    .informacion {
+        width:100%;
+        grid-gap: 1em;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "bloque1 bloque2 bloque3 bloque4"
+        "redes redes redes redes"
+        "logo_texto logo_texto logo_texto logo_texto"
+        "contacto contacto contacto contacto";
+    }
+
+    .informacion_bloque1 { grid-area: bloque1; }
+    .informacion_bloque2 { grid-area: bloque2; }
+    .informacion_bloque3 { grid-area: bloque3; }
+    .informacion_bloque4 { grid-area: bloque4; }
+
+
+    .informacion__titulo {
+        font-size: 1.3rem;
+        font-family: fuente1;
+        color: var(--clr-blanco);
+        letter-spacing: 2px;
+        font-weight: bolder;
+        margin-bottom: .5em;
+        margin-top: .8em;
+        line-height: 1.5em;
+    }
+
+    .informacion__descripcion {
+        color: var(--clr-blanco);
+        font-family: fuente2;
+        font-size: .9rem;
+        margin-bottom: .3em;
+        font-weight: 400;
+    }
+
+    .informacion__descripcion a {
+        text-decoration: none;
+        color: var(--clr-blanco);
+    }
+
+    .informacion_input {
+        width: 80%;
+        padding: 0.50em 1em;
+        border: 1px solid #ccc;
+        border-radius: 12px;
+        font-size: .8rem;
+        font-family: fuente2;
+        outline: none;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        background-color: var(--clr-blanco);
+        color: var(--clr-gris-oscuro);
+    }
+
+    .informacion_input::placeholder {
+        color: var(--clr-gris-oscuro);
+    }
+
+    .informacion_input:focus {
+        border-color: #007BFF;
+    }
+
+}

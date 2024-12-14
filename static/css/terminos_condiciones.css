@@ -1,29 +1,3 @@
-@font-face {
-    font-family: 'fuente1';
-    src: url(../fonts/fuente1.otf);
-}
-
-@font-face {
-    font-family: 'fuente2';
-    src: url(../fonts/fuente2.ttf);
-}
-
-:root {
-    --clr-rojo-fuerte: #CB0E0E;
-    --clr-rojo-intermedio: #AC2828;
-    --clr-rojo-oscuro: #280000;
-    --clr-celeste: #00B7F3;
-    --clr-celeste-oscuro: #0080BB;
-    --clr-negro: #171818;
-    --clr-gris: #E0E9EC;
-    --clr-gris_oscuro: #647276;
-    --clr-blanco: #FCFEFE;
-    --ff-title: 'Oswald', sans-serif;
-    --ff-serif: 'Open Sans', serif;
-    --ff-logo: Helvetica;
-    --ff-titillium: 'Titillium Web', sans-serif;
-}
-
 #terminos-condiciones-table-container, 
 .terminos-condiciones-container {
     max-width: 1500px;
