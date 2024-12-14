@@ -194,31 +194,10 @@
 
         </main>
 
-        <!-- CARGAR HEADER -->
-
-        <script>
-            async function loadHeader() {
-                const headerContainer = document.querySelector('#header-container');
-                const response = await fetch('header.html');
-                const headerHTML = await response.text();
-                headerContainer.innerHTML = headerHTML;
-            }
-        
-            loadHeader();
-        </script>
-
         <script src="static/js/header.js"></script>
 
         <script src="static/js/faq.js"></script>
 
-        <!-- CARGAR FOOTER -->
-
-        <script>
-            fetch('footer.html')
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById('footer-placeholder').innerHTML = data;
-                });
-        </script>
+        <script src="static/js/footer.js"></script>
     </body>    
 </html>
