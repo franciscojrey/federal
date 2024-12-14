@@ -1,29 +1,3 @@
-@font-face {
-    font-family: 'fuente1';
-    src: url(../fonts/fuente1.otf);
-}
-
-@font-face {
-    font-family: 'fuente2';
-    src: url(../fonts/fuente2.ttf);
-}
-
-:root {
-    --clr-rojo-fuerte: #CB0E0E;
-    --clr-rojo-intermedio: #AC2828;
-    --clr-rojo-oscuro: #280000;
-    --clr-celeste: #00B7F3;
-    --clr-celeste-oscuro: #0080BB;
-    --clr-negro: #171818;
-    --clr-gris: #E0E9EC;
-    --clr-gris_oscuro: #647276;
-    --clr-blanco: #FCFEFE;
-    --ff-title: 'Oswald', sans-serif;
-    --ff-serif: 'Open Sans', serif;
-    --ff-logo: Helvetica;
-    --ff-titillium: 'Titillium Web', sans-serif;
-}
-
 /* --------------- FAQ START --------------- */
 
 .faq-container {
@@ -60,14 +34,14 @@
 .faq-texto-titulo {
     font-family: fuente1;
     color: var(--clr-rojo-fuerte);
-    font-size: 1.4rem;
+    font-size: var(--fs-mobile-2);
 }
 
 .faq-text-descripcion {
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
-    font-size: .9rem;
+    font-size: var(--fs-mobile-5);
 }
 
 .faq-text-descripcion a {
@@ -77,11 +51,11 @@
 .faq-titulo {
     flex-grow: 1;
     color: var(--clr-rojo-fuerte);
-    font-size: .9rem;
+    font-size: var(--fs-mobile-5);
 }
 
 .faq-toggle {
-    font-size: 1.5em;
+    font-size: var(--fs-mobile-5);
     color: var(--clr-negro);
     margin-left: 1em;
 }
@@ -90,7 +64,7 @@
     display: none;
     padding: 1em;
     background-color: var(--clr-blanco);
-    font-size: .8em;
+    font-size: var(--fs-mobile-5);
     color: var(--clr-negro);
     font-family: fuente2;
 }
@@ -117,8 +91,9 @@
 }
 
 .sector-titulo {
+    font-family: fuente2;
     margin-bottom: 0.5em;
-    font-size: 1.1em;
+    font-size: var(--fs-mobile-5);
     font-weight: bold;
     color: var(--clr-celeste-oscuro);
     padding-bottom: 0.5em;
@@ -136,17 +111,18 @@
 .sector-lista li {
     display: flex;
     align-items: center;
-    font-size: 1em;
+    font-size: var(--fs-mobile-5);
     color: #333;
     position: relative;
     padding-left: 1em;
+    font-family: fuente2;
 }
 
 .sector-lista li::before {
     content: '•';
     position: absolute;
     left: 0;
-    font-size: 1.5em;
+    font-size: var(--fs-mobile-5);
     line-height: 1;
 }
 

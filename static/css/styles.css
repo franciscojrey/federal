@@ -1,3 +1,11 @@
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-serif);
+    color: var(--clr-text);
+    font-size: 16px;
+}
+
 @font-face {
     font-family: 'fuente1';
     src: url(../fonts/fuente1.otf);
@@ -18,10 +26,14 @@
     --clr-gris: #E0E9EC;
     --clr-gris-oscuro: #647276;
     --clr-blanco: #FCFEFE;
-    --ff-title: 'Oswald', sans-serif;
-    --ff-serif: 'Open Sans', serif;
-    --ff-logo: Helvetica;
-    --ff-titillium: 'Titillium Web', sans-serif;
+
+    /* Fonts tamaño mobile */
+    --fs-mobile-1: 2.8125rem; /* 45px */
+    --fs-mobile-2: 2.25rem; /* 36px */
+    --fs-mobile-3: 1.5rem; /* 24px */
+    --fs-mobile-4: 1.125rem; /* 18px */
+    --fs-mobile-5: 1rem; /* 16px */
+    --fs-mobile-6: .875rem; /* 14px */
 }
 
 .rojo-fuerte{
@@ -70,14 +82,6 @@
     scroll-behavior: smooth;   
 }
 
-html {
-    box-sizing: border-box;
-    font-family: var(--ff-serif);
-    color: var(--clr-text);
-    font-size: 1.25rem;
-    
-}
-
 body {
     margin: 0;
     text-align: center;
@@ -101,6 +105,7 @@ p {
     display: inline-block;
     margin-bottom: 1em;
     font-family: fuente2;
+    font-size: var(--fs-mobile-5);
 }
 
 .boton-fondo-celeste {
@@ -110,7 +115,7 @@ p {
     padding: .6em .9em;
     border-radius: 18px;
     display: inline-block;
-    font-size: .8rem;
+    font-size: var(--fs-mobile-5);
     text-decoration: none;
 }
 
@@ -121,7 +126,7 @@ p {
     padding: .6em .9em;
     border-radius: 18px;
     display: inline-block;
-    font-size: .8rem;
+    font-size: var(--fs-mobile-5);
     cursor: pointer;
     text-decoration: none;
 }
@@ -166,7 +171,7 @@ p {
     line-height: 1.3em;
     margin-top: .5em;
     margin-bottom: .5em;
-    font-size: 2rem;
+    font-size: var(--fs-mobile-1);
     font-family: fuente1;
     color: var(--clr-rojo-oscuro)
 }
@@ -175,8 +180,16 @@ p {
     margin-bottom: .8em;
     color: var(--clr-negro);
     font-family: fuente2;
-    font-size: .9rem;
+    font-size: var(--fs-mobile-5);
     line-height: 1.4rem;
+}
+
+.home-container p {
+    font-size: var(--fs-mobile-4);
+    color: var(--clr-celeste);
+    font-weight: bolder;
+    font-family: fuente1;
+    margin-bottom: 1em;
 }
 
 /* --------------- HOME END --------------- */
@@ -224,7 +237,7 @@ p {
 .dolar-mep-titulo {
     line-height: 1.2em;
     margin-bottom: 1em;
-    font-size: 1.4rem;
+    font-size: var(--fs-mobile-3);
     font-family: fuente1;
     color: var(--clr-negro); 
 }
@@ -232,7 +245,7 @@ p {
 /* --------------- DOLAR MEP END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
-
+/* AJUSTAR TAMAÑOS COLORES ETC 
 .abrir-cuenta {
     width:90%;
     margin: 0 auto;
@@ -284,7 +297,7 @@ p {
     display: inline-block;
     font-size: .8rem;
 }
-
+*/
 /* --------------- ABRIR CUENTA END --------------- */
 
 /* --------------- ACERCA DE START --------------- */
@@ -324,7 +337,7 @@ p {
 .acerca-de-titulo {
     line-height: 1.2em;
     margin-bottom: 1em;
-    font-size: 1.4rem;
+    font-size: var(--fs-mobile-3);
     font-family: fuente1;
     color: var(--clr-negro); 
 }
@@ -332,8 +345,8 @@ p {
 .acerca-de-descripcion {
     margin-bottom: 1rem;
     color: var(--clr-negro);
-    font-family: fuente2;
-    font-size: 1rem;
+    font-family: fuente2;    
+    font-size: var(--fs-mobile-5);
     line-height: 1.4rem;
 }
 
@@ -364,7 +377,7 @@ p {
 .opera-titulo {
     line-height: 1.5em;
     margin-bottom: 1em;
-    font-size: 1.5rem;
+    font-size: var(--fs-mobile-3);
     font-family: fuente1;
     letter-spacing: 2px;
     color: var(--clr-celeste-oscuro);
@@ -373,7 +386,7 @@ p {
 .opera-descripcion {
     color: var(--clr-black);
     font-family: fuente2;
-    font-size: 1rem;
+    font-size: var(--fs-mobile-5);
     line-height: 1.4rem;
     width: 75%;
     margin: 0 auto 2rem auto;

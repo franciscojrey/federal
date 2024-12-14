@@ -27,14 +27,14 @@
 .aranceles-texto-titulo {
     font-family: fuente1;
     color: var(--clr-rojo-fuerte);
-    font-size: 1.4rem;
+    font-size: var(--fs-mobile-2);
 }
 
 .aranceles-texto-descripcion {
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
-    font-size: .9rem;
+    font-size: var(--fs-mobile-6);
 }
 
 .selector-aranceles {
@@ -51,17 +51,21 @@
     display: flex;
     padding: 1em 1.5em;
     border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: fuente1;
+    cursor: pointer;    
 }
 
 .selector-box p{
     margin: auto 0;
+    font-weight: bold;
+    font-family: fuente1;
+    font-size: var(--fs-mobile-3);
 }
 
 .selector-flecha {
     margin-left: auto;
+    font-weight: bold;
+    font-family: fuente1;
+    font-size: var(--fs-mobile-1);
 }
 
 .selector-dropdown {
@@ -81,6 +85,7 @@
 .selector-opcion {
     padding: 0.5em 1em;
     cursor: pointer;
+    font-size: var(--fs-mobile-5);
 }
 
 .aranceles-card {
@@ -96,7 +101,7 @@
 
 .aranceles-titulo {
     color: var(--clr-gris-oscuro);
-    font-size: .9rem;
+    font-size: var(--fs-mobile-6);
     grid-area: aranceles-titulo;
     font-family: fuente1;
     margin-bottom: .5em;
@@ -106,7 +111,7 @@
     font-family: fuente2; 
     color: var(--clr-celeste);
     padding: 1em .5em;
-    font-size: .7rem;
+    font-size: var(--fs-mobile-6);
 }
 
 .aranceles-subtitulo1 { grid-area: aranceles-subtitulo1; }
@@ -120,7 +125,7 @@
 .aranceles-subtitulo3 { grid-area: aranceles-subtitulo3; }
 
 .aranceles-precio { 
-    font-size: .7rem;
+    font-size: var(--fs-mobile-6);
     font-family: fuente2; 
     color: var(--clr-negro);
     padding: 0 .5em;
@@ -191,7 +196,7 @@
 }
 
 .aranceles-texto p {
-    font-size: .7rem;
+    font-size: var(--fs-mobile-6);
     color: var(--clr-gris-oscuro);
     text-align: left;
     font-family: fuente2;

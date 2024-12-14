@@ -31,7 +31,7 @@
 .footer-informacion-bloque4 { grid-area: bloque4; }
 
 .footer-informacion-titulo {
-    font-size: 1.3rem;
+    font-size: var(--fs-mobile-5);
     font-family: fuente1;
     color: var(--clr-blanco);
     letter-spacing: 2px;
