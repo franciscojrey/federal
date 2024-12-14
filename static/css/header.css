@@ -11,7 +11,7 @@ body {
     height: 100vh;
     margin-top: -25em;
     z-index: -1; 
-    background-image: url("../img/home/OlaFederalDK.svg");
+    background-image: url("../img/header/ola.svg");
     background-size:contain;
     background-repeat: no-repeat;
     background-position: center;
