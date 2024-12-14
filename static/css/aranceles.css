@@ -24,13 +24,13 @@
     font-family: fuente1;
 }
 
-.aranceles-text-title {
+.aranceles-texto-titulo {
     font-family: fuente1;
     color: var(--clr-rojo-fuerte);
     font-size: 1.4rem;
 }
 
-.aranceles-text-description {
+.aranceles-texto-descripcion {
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -60,7 +60,7 @@
     margin: auto 0;
 }
 
-.selector-arrow {
+.selector-flecha {
     margin-left: auto;
 }
 
@@ -78,7 +78,7 @@
     display: block;
 }
 
-.selector-option {
+.selector-opcion {
     padding: 0.5em 1em;
     cursor: pointer;
 }
@@ -190,7 +190,7 @@
 
 }
 
-.aranceles-text p {
+.aranceles-texto p {
     font-size: .7rem;
     color: var(--clr-gris-oscuro);
     text-align: left;

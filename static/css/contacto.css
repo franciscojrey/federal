@@ -3,12 +3,6 @@ h3 {
     font-family: fuente2;
 }
 
-p {
-    font-family: fuente2;
-    color: var(--clr-negro);
-    text-align: left;
-}
-
 /* --------------- CONTACTO START --------------- */
 
 .contacto-container {   
@@ -20,12 +14,10 @@ p {
 .contacto-card-imagen {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1em;
     grid-template-areas: 
     "img"
     "card";
 }
-
 
 .contacto-imagen { 
     grid-area: img; 
@@ -40,6 +32,8 @@ p {
     padding: 2em;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 233, 233));
     margin-bottom: 4em;
+    font-family: fuente2;
+    color: var(--clr-negro);
 }
 
 .contacto-card h3 {
@@ -86,12 +80,22 @@ p {
 .contacto-formulario-titulo {
     color: var(--clr-rojo-intermedio);
     margin-bottom: .5em;
+    font-family: fuente2;
+    text-align: left;
+}
+
+.contacto-formulario p {
+    font-family: fuente2;
+    color: var(--clr-negro);
+    text-align: left;
 }
 
 .contacto-formulario-horario {
     color: var(--clr-gris-oscuro);
     margin: 1em 0;
     font-size: .9rem;
+    font-family: fuente2;
+    text-align: left;
 }
 
 .contacto-formulario-item {
@@ -142,5 +146,18 @@ p {
 
     .contacto-card {
         padding: 4em 2em;
+        text-align: left;
+    }
+
+    .contacto-formulario-titulo {
+        text-align: center;
+    }
+    
+    .contacto-formulario p {
+        text-align: center;
+    }
+    
+    .contacto-formulario-horario {
+        text-align: center;
     }
 }

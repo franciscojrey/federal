@@ -1,10 +1,10 @@
 /* --------------- FOOTER START --------------- */
 
-.informacion-container {
+.footer-informacion-container {
     background-color: rgb(27, 27, 27);
 }
 
-.informacion {
+.footer-informacion {
     width:100%;
     max-width: 1500px;
     text-align: left;
@@ -20,18 +20,17 @@
     "bloque3"
     "bloque4"
     "redes"
-    "logo_texto"
-    "contacto_informacion"
+    "logo-texto"
+    "contacto-informacion"
     "contacto";
 }
 
-.informacion_bloque1 { grid-area: bloque1; }
-.informacion_bloque2 { grid-area: bloque2; }
-.informacion_bloque3 { grid-area: bloque3; }
-.informacion_bloque4 { grid-area: bloque4; }
+.footer-informacion-bloque1 { grid-area: bloque1; }
+.footer-informacion-bloque2 { grid-area: bloque2; }
+.footer-informacion-bloque3 { grid-area: bloque3; }
+.footer-informacion-bloque4 { grid-area: bloque4; }
 
-
-.informacion__titulo {
+.footer-informacion-titulo {
     font-size: 1.3rem;
     font-family: fuente1;
     color: var(--clr-blanco);
@@ -42,7 +41,7 @@
     line-height: 1.5em;
 }
 
-.informacion__descripcion {
+.footer-informacion-descripcion {
     color: var(--clr-blanco);
     font-family: fuente2;
     font-size: .9rem;
@@ -50,12 +49,12 @@
     font-weight: 400;
 }
 
-.informacion__descripcion a {
+.footer-informacion-descripcion a {
     text-decoration: none;
     color: var(--clr-blanco);
 }
 
-.informacion_input {
+.footer-informacion-input {
     width: 80%;
     padding: 0.50em 1em;
     border: 1px solid #ccc;
@@ -68,39 +67,112 @@
     color: var(--clr-gris-oscuro);
 }
 
-.informacion_input::placeholder {
+.footer-informacion-input::placeholder {
     color: var(--clr-gris-oscuro);
 }
 
-.informacion_input:focus {
-    border-color: #007BFF;
+.footer-informacion-input:focus {
+    border-color: var(--clr-celeste-);
 }
+
+/* --------------- REDES SOCIALES START --------------- */
+
+.footer-redes-sociales {
+    grid-area: redes;
+    padding: 2.5em 0 2em 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-areas: 
+    "red1 red2 red3";
+}
+
+.footer-red1 {grid-area: red1;}
+.footer-red2 {grid-area: red2;}
+.footer-red3 {grid-area: red3;}
+
+.footer-red  {
+    margin: 0 auto;
+  }
+/* --------------- REDES SOCIALES END --------------- */
+
+
+/* --------------- LOGO TEXTO START --------------- */
+
+.footer-logo-texto {
+    width:100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em 0;
+    grid-area: logo-texto;
+}
+
+.footer-logo-texto-descripcion {
+    margin-bottom: 1rem;
+    color: var(--clr-blanco);
+    font-size: .7rem;
+    font-family: fuente2;
+}
+
+.footer-logo-texto-box {
+    display: inline-grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img container"
+}
+
+.footer-logo-texto-img { 
+    grid-area: img; 
+    max-width: 90px;
+    margin: 0 auto;
+    width: 100%;
+}
+.footer-logo-texto-container { grid-area: container; }
+
+/* --------------- LOGO TEXTO END --------------- */
 
 /* --------------- CONTACTO INFORMACION START --------------- */
 
-.contacto_informacion {    
+.footer-contacto-informacion {    
     grid-area: contacto;
+    text-align: center;
+    color: var(--clr-gris-oscuro);
+    font-family: fuente2;
+    font-size: .7rem;
+    margin: 0 auto;
 }
+
+.footer-contacto-informacion a{
+    text-decoration: underline;
+    color: var(--clr-gris-oscuro);
+}
+
 
 /* --------------- CONTACTO INFORMACION END --------------- */
 
 /* --------------- INFORMACION NEGRO START --------------- */
 
-.informacion_negro {
+.footer-informacion-negro {
     background-color: var(--clr-negro);
 }
 
-/* --------------- LOGOS START --------------- */
+/* --------------- LOGOS ORGANISMOS START --------------- */
 
-.logos {
+.footer-logos-organismos {
     padding: 1em 4em;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     grid-template-areas: 
-        "logo1 logo2"
-        "logo3 logo4"
-        "logo5 logo5";
+        "logo-organismo1 logo-organismo2"
+        "logo-organismo3 logo-organismo4"
+        "logo-organismo5 logo-organismo5";
     gap: .5rem;
     justify-content: center;
     align-items: center;
@@ -109,13 +181,13 @@
     text-align: center;
 }
 
-.logo1 {grid-area: logo1;}
-.logo2 {grid-area: logo2;}
-.logo3 {grid-area: logo3;}
-.logo4 {grid-area: logo4;}
-.logo5 {grid-area: logo5;}
+.footer-logo-organismo1 {grid-area: logo-organismo1;}
+.footer-logo-organismo2 {grid-area: logo-organismo2;}
+.footer-logo-organismo3 {grid-area: logo-organismo3;}
+.footer-logo-organismo4 {grid-area: logo-organismo4;}
+.footer-logo-organismo5 {grid-area: logo-organismo5;}
 
-.logo {
+.footer-logo-organismo {
     padding: .6em;
     max-width: 150px;
     max-height: 150px;
@@ -126,17 +198,17 @@
     overflow: hidden;
 }
 
-.logo img {
+.footer-logo-organismo img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
 }
 
-/* --------------- LOGOS END --------------- */
+/* --------------- LOGOS ORGANISMOS END --------------- */
 
 /* --------------- COPYRIGHT START --------------- */
 
-.copyright{
+.footer-copyright{
     color:var(--clr-blanco);
     font-family: fuente2;
     font-size: .7rem;
@@ -155,39 +227,39 @@
 
     /* --------------- FOOTER START --------------- */
 
-    .informacion {
+    .footer-informacion {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
         "bloque1 bloque2 bloque3 bloque4"
         "redes redes redes redes"
-        "logo_texto logo_texto logo_texto logo_texto"
+        "logo-texto logo-texto logo-texto logo-texto"
         "contacto contacto contacto contacto";
     }
   
     /* --------------- REDES SOCIALES START --------------- */
 
-    .redes_sociales {
+    .footer-redes-sociales {
         width: 20%;
     }
 
     /* --------------- REDES SOCIALES END --------------- */
 
     /* --------------- CONTACTO INFORMACION START --------------- */
-    .contacto_informacion {    
+    .footer-contacto-informacion {    
         width: 40%;
     }
 
     /* --------------- CONTACTO INFORMACION END --------------- */
 
-    /* --------------- LOGOS START --------------- */
+    /* --------------- LOGOS ORGANISMOS START --------------- */
 
-    .logos {
+    .footer-logos-organismos {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-            "logo1 logo2 logo3 logo4 logo5";
+            "logo-organismo1 logo-organismo2 logo-organismo3 logo-organismo4 logo-organismo5";
     }
 
-    /* --------------- LOGOS END --------------- */
+    /* --------------- LOGOS ORGANISMO END --------------- */
 
     /* --------------- FOOTER END --------------- */
 

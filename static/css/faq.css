@@ -1,3 +1,29 @@
+@font-face {
+    font-family: 'fuente1';
+    src: url(../fonts/fuente1.otf);
+}
+
+@font-face {
+    font-family: 'fuente2';
+    src: url(../fonts/fuente2.ttf);
+}
+
+:root {
+    --clr-rojo-fuerte: #CB0E0E;
+    --clr-rojo-intermedio: #AC2828;
+    --clr-rojo-oscuro: #280000;
+    --clr-celeste: #00B7F3;
+    --clr-celeste-oscuro: #0080BB;
+    --clr-negro: #171818;
+    --clr-gris: #E0E9EC;
+    --clr-gris_oscuro: #647276;
+    --clr-blanco: #FCFEFE;
+    --ff-title: 'Oswald', sans-serif;
+    --ff-serif: 'Open Sans', serif;
+    --ff-logo: Helvetica;
+    --ff-titillium: 'Titillium Web', sans-serif;
+}
+
 /* --------------- FAQ START --------------- */
 
 .faq-container {
@@ -27,28 +53,28 @@
     font-family: fuente1;
 }
 
-.faq-text {
+.faq-texto {
     text-align: left;
 }
 
-.faq-text-title {
+.faq-texto-titulo {
     font-family: fuente1;
     color: var(--clr-rojo-fuerte);
     font-size: 1.4rem;
 }
 
-.faq-text-description {
+.faq-text-descripcion {
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
     font-size: .9rem;
 }
 
-.faq-text-description a {
+.faq-text-descripcion a {
     text-decoration: none;
 }
 
-.faq-title {
+.faq-titulo {
     flex-grow: 1;
     color: var(--clr-rojo-fuerte);
     font-size: .9rem;
@@ -60,7 +86,7 @@
     margin-left: 1em;
 }
 
-.faq-content {
+.faq-contenido {
     display: none;
     padding: 1em;
     background-color: var(--clr-blanco);
@@ -69,11 +95,11 @@
     font-family: fuente2;
 }
 
-.faq-button-container {
+.faq-boton-container {
     margin-top: 1em;
 }
 
-.faq-card.active .faq-content {
+.faq-card.active .faq-contenido {
     display: block;
 }
 
@@ -90,7 +116,7 @@
     font-family: Arial, sans-serif;
 }
 
-.sector-title {
+.sector-titulo {
     margin-bottom: 0.5em;
     font-size: 1.1em;
     font-weight: bold;
@@ -98,7 +124,7 @@
     padding-bottom: 0.5em;
 }
 
-.sector-list {
+.sector-lista {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.5em 1em;
@@ -107,7 +133,7 @@
     margin: 0;
 }
 
-.sector-list li {
+.sector-lista li {
     display: flex;
     align-items: center;
     font-size: 1em;
@@ -116,7 +142,7 @@
     padding-left: 1em;
 }
 
-.sector-list li::before {
+.sector-lista li::before {
     content: '•';
     position: absolute;
     left: 0;
@@ -135,7 +161,7 @@
         align-items: start;
     }
 
-    .faq-text {
+    .faq-texto {
         grid-column: span 2;
     }
 
