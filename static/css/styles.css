@@ -92,7 +92,7 @@ p {
     margin: 0;
 }
 
-.boton_fondo_rojo_intermedio {
+.boton-fondo-rojo-intermedio {
     text-decoration: none;
     color: var(--clr-blanco);
     background-color: var(--clr-rojo-intermedio);
@@ -103,7 +103,7 @@ p {
     font-family: fuente2;
 }
 
-.boton_fondo_celeste {
+.boton-fondo-celeste {
     font-family: fuente2;
     color: var(--clr-blanco);
     background-color: var(--clr-celeste);
@@ -114,7 +114,7 @@ p {
     text-decoration: none;
 }
 
-.boton_transparente_borde_rojo {
+.boton-transparente-borde-rojo {
     font-family: fuente2;
     color: var(--clr-rojo-intermedio);
     border: 1px solid var(--clr-rojo-intermedio);
@@ -131,7 +131,7 @@ p {
 /* --------------- HOME START --------------- */
 
 
-.home__box {
+.home-box {
     display: inline-grid;
     justify-items: center;
     align-items: center;
@@ -145,7 +145,7 @@ p {
     "container"
 }
 
-.home__container { 
+.home-container { 
     grid-area: container;
     background: linear-gradient(to right, rgb(252, 251, 251), rgb(236, 236, 236));
     border-radius: 18px;
@@ -154,7 +154,7 @@ p {
     margin: 0 2em;
 }
 
-.home__title {
+.home-title {
     line-height: 1.3em;
     margin-top: .5em;
     margin-bottom: .5em;
@@ -163,7 +163,7 @@ p {
     color: var(--clr-rojo-oscuro)
 }
 
-.home__description {
+.home-description {
     margin-bottom: .8em;
     color: var(--clr-negro);
     font-family: fuente2;
@@ -171,7 +171,7 @@ p {
     line-height: 1.4rem;
 }
 
-.home__img { 
+.home-img { 
     grid-area: img; 
     max-width: 200px;
     margin: 0 auto;
@@ -182,11 +182,11 @@ p {
 
 /* --------------- DOLAR MEP START --------------- */
 
-.dolar_mep__container {
+.dolar-mep-container {
     background-color: var(--clr-blanco);
 }
 
-.dolar_mep {
+.dolar-mep {
     width:90%;
     margin: 0 auto;
     padding: 1.5em;
@@ -199,7 +199,7 @@ p {
         0 4px 10px rgba(0, 0, 0, 0.15);    /* Outside box shadow */
 }
 
-.dolar_mep__box {
+.dolar-mep-box {
     display: inline-grid;
     justify-items: center;
     align-items: center;
@@ -211,36 +211,28 @@ p {
     "img texto"
 }
 
-.dolar_mep__img { 
+.dolar-mep-img { 
     grid-area: img; 
     max-width: 400px;
     margin: 0 auto;
     width: 100%;
 }
 
-.dolar_mep__texto { grid-area: texto; }
+.dolar-mep-texto { grid-area: texto; }
 
-.dolar_mep__title {
+.dolar-mep-titulo {
     line-height: 1.2em;
     margin-bottom: 1em;
     font-size: 1.4rem;
     font-family: fuente1;
     color: var(--clr-negro); 
-}
-
-.dolar_mep__description {
-    margin-bottom: 1rem;
-    color: var(--clr-negro);
-    font-family: fuente2;
-    font-size: 1rem;
-    line-height: 1.4rem;
 }
 
 /* --------------- DOLAR MEP END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
 
-.abrir_cuenta {
+.abrir-cuenta {
     width:90%;
     margin: 0 auto;
     padding: 1.5em;
@@ -253,7 +245,7 @@ p {
         0 4px 10px rgba(0, 0, 0, 0.15);    /* Outside box shadow */
 }
 
-.abrir_cuenta__box {
+.abrir-cuenta-box {
     display: inline-grid;
     justify-items: center;
     align-items: center;
@@ -265,16 +257,16 @@ p {
     "img texto"
 }
 
-.abrir_cuenta__img { 
+.abrir-cuenta-img { 
     grid-area: img; 
     max-width: 400px;
     margin: 0 auto;
     width: 100%;
 }
 
-.abrir_cuenta__texto { grid-area: texto; }
+.abrir-cuenta-texto { grid-area: texto; }
 
-.abrir_cuenta__title {
+.abrir-cuenta-titulo {
     line-height: 1.2em;
     margin-bottom: 1em;
     font-size: 1.4rem;
@@ -282,15 +274,7 @@ p {
     color: var(--clr-negro); 
 }
 
-.abrir_cuenta__description {
-    margin-bottom: 1rem;
-    color: var(--clr-negro);
-    font-family: fuente2;
-    font-size: 1rem;
-    line-height: 1.4rem;
-}
-
-.abrir_cuenta__boton {
+.abrir-cuenta-boton {
     font-family: fuente2;
     color: var(--clr-blanco);
     background-color: var(--clr-celeste);
@@ -542,80 +526,12 @@ p {
 
 /* --------------- CONTACTO INFORMACION END --------------- */
 
-/* --------------- INFORMACION NEGRO START --------------- */
-
-.informacion_negro {
-    background-color: var(--clr-negro);
-}
-
-/* --------------- LOGOS START --------------- */
-
-.logos {
-    padding: 1em 4em;    
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "logo1 logo2"
-        "logo3 logo4"
-        "logo5 logo5";
-    gap: .5rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.logo1 {grid-area: logo1;}
-.logo2 {grid-area: logo2;}
-.logo3 {grid-area: logo3;}
-.logo4 {grid-area: logo4;}
-.logo5 {grid-area: logo5;}
-
-.logo {
-    padding: .6em;
-    max-width: 150px;
-    max-height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.logo img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-/* --------------- LOGOS END --------------- */
-
-/* --------------- COPYRIGHT START --------------- */
-
-.copyright{
-    color:var(--clr-blanco);
-    font-family: fuente2;
-    font-size: .7rem;
-    padding-bottom: 1em;
-}
-
-/* --------------- COPYRIGHT START --------------- */
-
-/* --------------- INFORMACION NEGRO END --------------- */
-
-/* --------------- FOOTER END --------------- */
-
-
-
 /* Desktop */
 @media (min-width: 769px) {
-    /* --------------- HOMEPAGE STYLES START --------------- */
 
 /* --------------- HOME START --------------- */
 
-.home__box {
+.home-box {
     margin-top: 8em;
     text-align: left;
     grid-template-columns: 1fr 1fr;
@@ -623,7 +539,7 @@ p {
     "container img";
 }
 
-.home__img { 
+.home-img { 
     max-width: 400px;
 }
 
@@ -632,156 +548,15 @@ p {
 
 /* --------------- ACERCA DE START --------------- */
 
-.acerca_de {
+.acerca-de {
     max-width: 800px;
 }
 
-.acerca_de__box {
+.acerca-de-box {
     gap: 4em;
 }
 
 /* --------------- ACERCA DE END --------------- */
-
-/* --------------- REDES SOCIALES START --------------- */
-
-.redes_sociales {
-    grid-area: redes;
-    padding: 2.5em 0 2em 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 20%;
-    margin: 0 auto;
-    grid-template-areas: 
-    "red1 red2 red3";
-}
-
-.red1 {grid-area: red1;}
-.red2 {grid-area: red2;}
-.red3 {grid-area: red3;}
-
-.red  {
-    margin: 0 auto;
-  }
-/* --------------- REDES SOCIALES END --------------- */
-
-/* --------------- LOGO TEXTO START --------------- */
-
-.logo_texto {    
-    margin: 0 auto;
-    text-align: left;
-    padding: 1em 0;
-    grid-area: logo_texto;
-}
-
-.logo_texto__description {
-    margin-bottom: 1rem;
-    color: var(--clr-blanco);
-    font-size: .7rem;    
-}
-
-.logo_texto__box {
-    display: inline-grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "img container"
-}
-
-.logo_texto__img { 
-    grid-area: img; 
-    max-width: 90px;
-    margin: 0 auto;
-    width: 100%;
-}
-.logo_texto__container { grid-area: container; }
-
-/* --------------- LOGO TEXTO END --------------- */
-
-/* --------------- CONTACTO INFORMACION START --------------- */
-
-
-.contacto_informacion {    
-    width: 40%;
-    grid-area: contacto;
-    text-align: center;
-    color: var(--clr-gris-oscuro);
-    font-family: fuente2;
-    font-size: .7rem;
-}
-
-.contacto_informacion a{
-    text-decoration: underline;
-    color: var(--clr-gris-oscuro);
-}
-
-
-/* --------------- CONTACTO INFORMACION END --------------- */
-
-/* --------------- INFORMACION NEGRO START --------------- */
-
-.informacion_negro {
-    background-color: var(--clr-negro);
-}
-
-/* --------------- LOGOS START --------------- */
-
-.logos {
-    padding: 1em 4em;    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas: 
-        "logo1 logo2 logo3 logo4 logo5";
-    gap: .5rem;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.logo1 {grid-area: logo1;}
-.logo2 {grid-area: logo2;}
-.logo3 {grid-area: logo3;}
-.logo4 {grid-area: logo4;}
-.logo5 {grid-area: logo5;}
-
-.logo {
-    padding: .6em;
-    max-width: 150px;
-    max-height: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.logo img {
-    max-width: 100%; /* Fit the width */
-    max-height: 100%; /* Fit the height */
-    object-fit: contain; /* Keep image proportions */
-}
-
-/* --------------- LOGOS END --------------- */
-
-/* --------------- COPYRIGHT START --------------- */
-
-.copyright{
-    color:var(--clr-blanco);
-    font-family: fuente2;
-    font-size: .7rem;
-    padding-bottom: 1em;
-}
-
-/* --------------- COPYRIGHT START --------------- */
-
-/* --------------- INFORMACION NEGRO END --------------- */
-
-/* --------------- FOOTER END --------------- */
 
 
 }
