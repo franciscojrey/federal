@@ -31,7 +31,7 @@ h3 {
 .cuenta-presencial-hero h3 {
     grid-area: titulo;
     font-family: fuente1;
-    color: var(--clr-rojo-intermedio);
+    color: var(--clr-rojo-fuerte);
     margin-bottom: .5em;
     font-size: var(--fs-mobile-2);
     text-align: left;
@@ -53,13 +53,12 @@ h3 {
     grid-area: btn-wsp;
     background-color: var(--clr-celeste);
     width: 8;
-    height: 80px;
     border-radius: 50%;
     padding: .9em;
 }
 
 .cuenta-presencial-hero-contactos {
-    grid-area: btn-contactos
+    grid-area: btn-contactos;
 }
 
 /* --------------- DOCUMENTACIÓN START --------------- */
@@ -82,10 +81,6 @@ h3 {
     font-weight: bold;
     color: var(--clr-celeste);
     font-size: var(--fs-mobile-4);
-}
-
-.documentacion-texto {
-    text-align: center;
 }
 
 .documentacion-texto p {
@@ -112,18 +107,40 @@ h3 {
         "texto texto img"
         "btn-wsp btn-contactos img";
     }
-
     
+    .cuenta-presencial-hero h3 {
+        font-size: var(--fs-desktop-2);
+    }
+    
+    .cuenta-presencial-hero p {
+        font-size: var(--fs-desktop-5);
+    }
+
+    /* --------------- DOCUMENTACIÓN START --------------- */
+
     .documentacion-box {
         display: flex;
         gap: 4em;
     }
 
+    .documentacion-container h3 {
+        font-size: var(--fs-desktop-3);
+    }
+
     .documentacion-titulo {
+        font-size: var(--fs-desktop-4);
         cursor: auto;
     }
 
     .documentacion-flecha {
         display: none;
     }
+
+    .documentacion-texto p {
+        font-size: var(--fs-desktop-5);
+    }
+
+/* --------------- DOCUMENTACIÓN END --------------- */
+
+
 }

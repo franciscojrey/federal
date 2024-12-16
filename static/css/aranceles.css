@@ -149,7 +149,7 @@
     border-spacing: 10px;
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.9rem;
+    font-size: var(--fs-desktop-5);
     text-align: left;
     table-layout: fixed;
 }
@@ -207,4 +207,16 @@
 /* Desktop */
 @media (min-width: 769px) {
 
+    .selector-box p{   
+        font-size: var(--fs-desktop-4);
+    }
+
+    .selector-opcion {
+        font-size: var(--fs-desktop-5);
+    }
+
+    .aranceles-texto p {
+        font-size: var(--fs-desktop-6);
+    }
+    
 }
