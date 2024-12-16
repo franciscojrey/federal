@@ -239,6 +239,15 @@
         "logo-texto logo-texto logo-texto logo-texto"
         "contacto contacto contacto contacto";
     }
+
+    .footer-informacion-titulo {
+        font-size: var(--fs-desktop-4);
+    }
+
+    .footer-informacion-descripcion,
+    .footer-informacion-input {
+        font-size: var(--fs-desktop-5);
+    }
   
     /* --------------- REDES SOCIALES START --------------- */
 
@@ -248,9 +257,18 @@
 
     /* --------------- REDES SOCIALES END --------------- */
 
+    /* --------------- LOGO TEXTO START --------------- */
+
+    .footer-logo-texto-descripcion {
+        font-size: var(--fs-desktop-6);
+    }
+
+    /* --------------- LOGO TEXTO END --------------- */
+
     /* --------------- CONTACTO INFORMACION START --------------- */
     .footer-contacto-informacion {    
         width: 40%;
+        font-size: var(--fs-desktop-6);
     }
 
     /* --------------- CONTACTO INFORMACION END --------------- */
@@ -264,6 +282,14 @@
     }
 
     /* --------------- LOGOS ORGANISMO END --------------- */
+
+    /* --------------- COPYRIGHT START --------------- */
+
+    .footer-copyright{
+        font-size: var(--fs-desktop-7);
+    }
+
+    /* --------------- COPYRIGHT START --------------- */
 
     /* --------------- FOOTER END --------------- */
 

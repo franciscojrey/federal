@@ -37,14 +37,14 @@
     font-size: var(--fs-mobile-2);
 }
 
-.faq-text-descripcion {
+.faq-texto-descripcion {
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
     font-size: var(--fs-mobile-5);
 }
 
-.faq-text-descripcion a {
+.faq-texto-descripcion a {
     text-decoration: none;
 }
 
@@ -141,6 +141,17 @@
         grid-column: span 2;
     }
 
+    
+    .faq-texto-titulo {
+        font-size: var(--fs-desktop-2);
+    }
+
+    .faq-texto-descripcion,
+    .faq-titulo,
+    .faq-contenido p {
+        font-size: var(--fs-desktop-5);
+    }
+
     .faq-card:last-child {
         grid-column: span 2;
     }
@@ -154,4 +165,10 @@
     .sector-box:last-child {
         grid-column: span 2;
     }
+
+    .sector-titulo,
+    .sector-lista {
+        font-size: var(--fs-desktop-6);
+    }
 }
+
