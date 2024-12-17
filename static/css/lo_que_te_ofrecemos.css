@@ -1,0 +1,196 @@
+/* --------------- DOLAR MEP START --------------- */
+
+.dolar-mep-container {   
+    gap: 1em;
+    margin: 4em auto 4em auto;    
+    grid-auto-rows: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "titulo"
+    "precios";
+}
+
+.dolar-mep-texto{
+    grid-area: titulo;
+    padding: 0 1em;
+}   
+
+.dolar-mep-texto h3 {
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-2);
+    font-weight: 800;
+    font-family: fuente1;
+    text-align: left;
+}
+
+.dolar-mep-precios {
+    background-color: var(--clr-gris);
+    grid-area: precios;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    margin: 4em auto 4em auto;
+    padding: 2em 1em;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "dolar-mep-precio-box-compra dolar-mep-precio-box-venta"
+    "dolar-mep-descripcion dolar-mep-descripcion"
+    "dolar-mep-boton dolar-mep-boton";
+}
+
+.dolar-mep-precio-box-compra { grid-area: dolar-mep-precio-box-compra; }
+.dolar-mep-precio-box-venta { grid-area: dolar-mep-precio-box-venta; }
+.dolar-mep-precios-descripcion {grid-area: dolar-mep-descripcion; }
+.dolar-mep-precio a { grid-area: dolar-mep-boton; }
+
+.dolar-mep-precio-titulo,
+.dolar-mep-precio {
+    font-family: fuente2;
+    font-size: var(--fs-mobile-3);
+    font-weight: 700;
+}
+
+.dolar-mep-precio-titulo {
+    color: var(--clr-rojo-intermedio);
+}
+
+.dolar-mep-precio {
+    color: var(--clr-negro);
+}
+
+.dolar-mep-precios-descripcion {
+    color: var(--clr-celeste-oscuro);
+    font-size: var(--fs-mobile-5);
+}
+
+/* --------------- DOLAR MEP END --------------- */
+
+/* --------------- BENEFICIOS END --------------- */
+
+.beneficios-container {
+    margin: 4em auto 4em auto;
+    padding: 2em 1em;
+}
+
+.beneficios-texto h3 {
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-3);
+    font-weight: 800;
+    font-family: fuente1;
+    margin-bottom: 2em;
+}
+
+.beneficios-card {
+    display: flex;
+    position: relative;
+    background-color: var(--clr-gris);
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    z-index: 1;
+    align-items: center;
+    gap: 1em;
+    text-align: left;
+    background-image: url("../img/lo_que_te_ofrecemos/fondo_beneficios.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.beneficios-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    padding: 1.5px;
+    background: linear-gradient(to bottom right, var(--clr-gris), #dbdbdb); /* Diagonal gradient */
+    z-index: -1;
+    mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+}
+
+.beneficios-descripcion {
+    color: var(--clr-celeste-oscuro);
+    font-family: fuente2;
+    font-size: var(--fs-mobile-5);
+}
+
+/* --------------- BENEFICIOS END --------------- */
+
+/* --------------- TEST START --------------- */
+
+.test-container {
+    margin: 4em auto 4em auto;
+    padding: 2em 1em;
+    background: rgb(226,59,44);
+    background: linear-gradient(180deg, rgba(226,59,44,1) 26%, rgba(233,71,50,1) 48%, rgba(214,37,33,1) 75%);
+}
+
+
+.test-texto h3 {
+    font-size: var(--fs-mobile-4);
+    font-family: fuente1;
+    margin-bottom: 1em;
+    color: var(--clr-blanco);
+}
+
+.test-texto a {
+    font-family: fuente2;
+}
+
+/* --------------- TEST END --------------- */
+
+/* --------------- BENEFICIOS END --------------- */
+
+.servicios-financiamiento-container {
+    margin: 4em auto 4em auto;
+    padding: 2em 2em;
+}
+
+.servicios-financiamiento-texto h3 {
+    color: var(--clr-celeste-oscuro);
+    font-size: var(--fs-mobile-3);
+    font-weight: 700;
+    font-family: fuente1;
+    margin-bottom: 1em;
+}
+
+.servicios-financiamiento-texto p {
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-5);
+    font-family: fuente2;
+    max-width: 80%;
+    margin: 0 auto 1em auto;
+}
+
+.servicios-financiamiento-card {
+    display: flex;
+    background-color: var(--clr-gris);
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 10px;
+    align-items: center;
+    gap: 1em;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.servicios-financiamiento-descripcion {
+    color: var(--clr-negro);
+    font-family: fuente2;
+    font-size: var(--fs-mobile-5);
+}
+
+/* --------------- BENEFICIOS END --------------- */
+
+/* Desktop */
+@media (min-width: 769px) {
+ 
+
+}
