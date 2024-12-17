@@ -329,7 +329,7 @@ p {
 /* --------------- ABRIR CUENTA START --------------- */
 
 .abrir-cuenta {
-    padding: 0 2em;
+    padding: 0 1em;
 }
 
 .abrir-cuenta-texto {
@@ -358,18 +358,14 @@ p {
 
 .abrir-cuenta-container {
     display: flex;
-    overflow: hidden; /* Ensures cards don't overflow the container */
-    position: relative;
-    width: 300px;
-    height: 350px;
     margin: 0 auto;
+    padding: 1em; 
+    box-sizing: border-box;
 }
 
 .abrir-cuenta-card {
-    flex: 0 0 100%; /* Makes each card take up full container width */
-    display: none;
-    position: absolute;
-    transition: transform 0.3s ease-in-out; /* Smooth swipe animation */
+    display: none; /* Hide all cards */
+    transition: opacity 0.3s ease-in-out;
     background-color: var(--clr-gris, #f0f0f0);
     border: 2px solid var(--clr-celeste, #00B7F3);
     border-radius: 18px;
@@ -377,6 +373,10 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
+.abrir-cuenta-card.activo {
+    display: block; /* Show active card */
+    opacity: 1; /* Ensure visibility */
+}
 .abrir-cuenta-card.activo {
     display: block;
     transform: translateX(0);
@@ -409,6 +409,7 @@ p {
 
 .abrir-cuenta-card-encabezado img {
     margin-left: auto;
+    max-width: 50px;
 }
 
 .abrir-cuenta-card-subtitulo {
