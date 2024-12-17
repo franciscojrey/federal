@@ -33,6 +33,7 @@ html {
     --clr-blanco: #FDFEFE;
 
     /* Fonts tamaño mobile */
+    --fs-mobile-0: 3.75rem;
     --fs-mobile-1: 2.8125rem; /* 45px */
     --fs-mobile-2: 2.25rem; /* 36px */
     --fs-mobile-3: 1.5rem; /* 24px */
@@ -214,7 +215,7 @@ p {
 
 .dolar-mep-container {
     background-color: var(--clr-blanco);
-    background-image: url("../img/home/fondo_home_dolar_mep.svg");
+    background-image: url("../img/index/fondo_index_dolar_mep.svg");
     
 }
 
@@ -315,7 +316,7 @@ p {
 /* --------------- OLA INFERIOR DOLAR MEP START --------------- */
 
 .ola-inferior-dolar-mep {
-    background-image: url('../img/home/fondo_home_dolar_mep2.png');
+    background-image: url('../img/index/fondo_index_dolar_mep2.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -326,16 +327,45 @@ p {
 /* --------------- OLA INFERIOR DOLAR MEP END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
-.card-container {
+
+.abrir-cuenta {
+    padding: 0 2em;
+}
+
+.abrir-cuenta-texto {
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.abrir-cuenta-epigrafe {
+    color: var(--clr-negro);
+    font-family: fuente2;
+    font-size: var(--fs-mobile-6);
+}
+
+.abrir-cuenta-texto h3 {
+    color: var(--clr-celeste-oscuro);
+    font-family: fuente1;
+    font-size: var(--fs-mobile-3);
+    margin-bottom: .5em;   
+}
+
+.abrir-cuenta-subtitulo {
+    color: var(--clr-negro);
+    font-family: fuente2;
+    font-size: var(--fs-mobile-5);
+}
+
+.abrir-cuenta-container {
     display: flex;
     overflow: hidden; /* Ensures cards don't overflow the container */
     position: relative;
-    width: 300px; /* Matches card width */
-    height: 200px;
+    width: 300px;
+    height: 350px;
     margin: 0 auto;
 }
 
-.card {
+.abrir-cuenta-card {
     flex: 0 0 100%; /* Makes each card take up full container width */
     display: none;
     position: absolute;
@@ -347,17 +377,52 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.card.active {
+.abrir-cuenta-card.activo {
     display: block;
     transform: translateX(0);
 }
 
-.dots-container {
-    margin-top: 1.5em;
+.abrir-cuenta-card-encabezado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+    background-image: url("../img/index/fondo_cards_pasos.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.abrir-cuenta-card-encabezado-titulo {
+    font-family: fuente1;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-3);
+    font-weight: 700;
+}
+
+.abrir-cuenta-card-encabezado-numero {
+    font-family: fuente1;
+    color: var(--clr-celeste);
+    font-size: var(--fs-mobile-0);
+    font-weight: 700;
+    margin-left: .1em;
+}
+
+.abrir-cuenta-card-encabezado img {
+    margin-left: auto;
+}
+
+.abrir-cuenta-card-subtitulo {
+    text-align: left;
+    font-family: fuente2;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-5);
+}
+
+.abrir-cuenta-puntos-container {
     text-align: center;
 }
 
-.dot {
+.abrir-cuenta-punto {
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -367,7 +432,7 @@ p {
     cursor: pointer;
 }
 
-.dot.active {
+.abrir-cuenta-punto.activo {
     background-color: var(--clr-celeste, #00B7F3);
 }
 /* --------------- ABRIR CUENTA END --------------- */

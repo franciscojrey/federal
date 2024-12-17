@@ -27,7 +27,7 @@
         <main>            
             <section class="home">
                 <div class="home-box">
-                    <img src="static/gif/home/LogoAnimado.gif" class="home-img" alt="">
+                    <img src="static/gif/index/LogoAnimado.gif" class="home-img" alt="">
                     <div class="home-container">
                         <h3 class="home-titulo ">+ 20 años liderando tu<span class="rojo-fuerte"> inversión.</span></h3>
                         <h4 class="home-descripcion">Somos una empresa registrada ante la Comisión Nacional de Valores con más de dos décadas de experiencia en el mercado financiero argentino.</h4>
@@ -40,7 +40,7 @@
             <section class="dolar-mep-container">
                 <div class="dolar-mep">
                     <div class="dolar-mep-box">
-                        <img src="static/img/home/dolar.svg" class="dolar-mep-img" alt="">
+                        <img src="static/img/index/dolar.svg" class="dolar-mep-img" alt="">
                         <div class="dolar-mep-texto">
                             <h3 class="dolar-mep-titulo">Comprar y vender <span class="rojo-intermedio">Dólar MEP</span></h3>                           
                             <a href="" class="boton-fondo-celeste">Ver más</a>
@@ -136,32 +136,58 @@
             
             <section class="ola-inferior-dolar-mep"></section>          
 
-            <section class="card-slider-section">
-                <!-- Container for Cards -->
-                <div class="card-container" id="card-container">
-                    <div class="card active" id="card-1">
-                        <p>Card 1</p>
+            <section class="abrir-cuenta">
+
+                <div class="abrir-cuenta-texto">
+                    <p class="abrir-cuenta-epigrafe">¿Sos un inversor nuevo?</p>
+                    <h3>Invertí con nosotros</h3>
+                    <p class="abrir-cuenta-subtitulo">Abrí tu cuenta comitente en pocos pasos. Hacelo ya, <strong>gratis y online</strong>.</p>
+                </div>
+
+                <div class="abrir-cuenta-container" id="abrir-cuenta-container">
+                    <div class="abrir-cuenta-card activo" id="abrir-cuenta-card-1">
+                        <div class="abrir-cuenta-card-encabezado">
+                            <p class="abrir-cuenta-card-encabezado-titulo">PASO</p>
+                            <p class="abrir-cuenta-card-encabezado-numero">1</p>
+                            <img src="static/img/index/paso1.svg" alt="">
+                        </div>
+                        <div class="abrir-cuenta-card-subtitulo">
+                            <p>Abrí tu cuenta comitente para ser un <strong>cliente de Federal Bursatil</strong></p>
+                        </div>
                     </div>
-                    <div class="card" id="card-2">
-                        <p>Card 2</p>
+                    <div class="abrir-cuenta-card" id="abrir-cuenta-card-2">
+                        <div class="abrir-cuenta-card-encabezado">
+                            <p class="abrir-cuenta-card-encabezado-titulo">PASO</p>
+                            <p class="abrir-cuenta-card-encabezado-numero">2</p>
+                            <img src="static/img/index/paso2.svg" alt="">
+                        </div>
+                        <div class="abrir-cuenta-card-subtitulo">
+                            <p>Completa <strong>nuestros formularios</strong> online correctamente</p>
+                        </div>
                     </div>
-                    <div class="card" id="card-3">
-                        <p>Card 3</p>
+                    <div class="abrir-cuenta-card" id="abrir-cuenta-card-3">
+                        <div class="abrir-cuenta-card-encabezado">
+                            <p class="abrir-cuenta-card-encabezado-titulo">PASO</p>
+                            <p class="abrir-cuenta-card-encabezado-numero">3</p>
+                            <img src="static/img/index/paso3.svg" alt="">
+                        </div>
+                        <div class="abrir-cuenta-card-subtitulo">
+                            <p>Comunícate con tu operador asignado para recibir <strong>asesoramiento de calidad</strong></p>
+                        </div>
                     </div>
                 </div>
             
-                <!-- Dots Navigation -->
-                <div class="dots-container">
-                    <span class="dot active" onclick="showCard(1)"></span>
-                    <span class="dot" onclick="showCard(2)"></span>
-                    <span class="dot" onclick="showCard(3)"></span>
+                <div class="abrir-cuenta-puntos-container">
+                    <span class="abrir-cuenta-punto activo" onclick="mostrarCard(1)"></span>
+                    <span class="abrir-cuenta-punto" onclick="mostrarCard(2)"></span>
+                    <span class="abrir-cuenta-punto" onclick="mostrarCard(3)"></span>
                 </div>
             </section>
 
             <section class="acerca-de-container">
                 <div class="acerca-de">
                     <div class="acerca-de-box">
-                        <img src="static/img/home/candado.svg" class="acerca-de-img" alt="">
+                        <img src="static/img/index/candado.svg" class="acerca-de-img" alt="">
                         <div class="acerca-de-texto">
                             <h3 class="acerca-de-titulo">La <span class="celeste-oscuro">seguridad</span> de tu capital es lo primero</h3>
                             <h4 class="acerca-de-descripcion">
@@ -175,7 +201,7 @@
 
             <section class="opera-container">
                 <div class="opera-box">
-                    <img src="static/img/home/logo_federal_byma.svg" class="opera-img" alt="">
+                    <img src="static/img/index/logo_federal_byma.svg" class="opera-img" alt="">
                     <div class="opera-texto">
                         <h3 class="opera-titulo">Operá por vos mismo</h3>
                         <h4 class="opera-descripcion">
@@ -194,6 +220,6 @@
 
         <script src="static/js/footer.js"></script>
 
-        <script src="static/js/cards.js"></script>
+        <script src="static/js/index.js"></script>
     </body>    
 </html>
