@@ -1,7 +1,7 @@
 /* --------------- FOOTER START --------------- */
 
 .footer-informacion-container {
-    background-color: rgb(27, 27, 27);
+    background-color: #171818;
 }
 
 .footer-informacion {
@@ -33,7 +33,7 @@
 .footer-informacion-titulo {
     font-size: var(--fs-mobile-3);
     font-family: fuente1;
-    color: var(--clr-blanco);
+    color: var(--clr-gris);
     letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: .5em;
@@ -72,7 +72,7 @@
 }
 
 .footer-informacion-input:focus {
-    border-color: var(--clr-celeste-);
+    border-color: var(--clr-celeste);
 }
 
 /* --------------- REDES SOCIALES START --------------- */
@@ -111,9 +111,10 @@
 
 .footer-logo-texto-descripcion {
     margin-bottom: 1rem;
-    color: var(--clr-blanco);
+    color: var(--clr-gris);
     font-size: var(--fs-mobile-6);
     font-family: fuente2;
+    font-weight: 400;
 }
 
 .footer-logo-texto-box {
@@ -142,7 +143,7 @@
 .footer-contacto-informacion {    
     grid-area: contacto;
     text-align: center;
-    color: var(--clr-gris-oscuro);
+    color: var(--clr-gris-intermedio);
     font-family: fuente2;
     font-size: var(--fs-mobile-6);
     margin: 0 auto;
@@ -154,7 +155,7 @@
 
 .footer-contacto-informacion a{
     text-decoration: underline;    
-    color: var(--clr-gris-oscuro);
+    color: var(--clr-gris-intermedio);
 }
 
 
@@ -278,7 +279,7 @@
     .footer-logos-organismos {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-            "logo-organismo1 logo-organismo2 logo-organismo3 logo-organismo4 logo-organismo5";
+        "logo-organismo1 logo-organismo2 logo-organismo3 logo-organismo4 logo-organismo5";
     }
 
     /* --------------- LOGOS ORGANISMO END --------------- */

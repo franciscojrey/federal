@@ -86,7 +86,7 @@
 }
 
 .contacto-formulario-titulo {
-    color: var(--clr-rojo-intermedio);
+    color: var(--clr-rojo-fuerte);
     font-size: var(--fs-mobile-4);
     margin-bottom: .5em;
     font-family: fuente1;
@@ -114,7 +114,7 @@
 
 .contacto-formulario-item-texto {
     font-size: var(--fs-mobile-6);
-    color: var(--clr-negro);
+    color: var(--clr-gris-oscuro);
     margin-bottom: 0.5em;
     font-family: fuente2;
     text-align: left;
@@ -123,12 +123,15 @@
 .contacto-formulario-input {
     width: 100%;
     padding: 0.8em;
-    border: 1px solid var(--clr-negro);
+    border: 1px solid var(--clr-gris-oscuro);
     border-radius: 18px;
     font-size: var(--fs-mobile-6);
     font-family: fuente2;
-    color: var(--clr-negro);
     transition: border-color 0.3s ease;
+}
+
+.contacto-formulario-input::placeholder {
+    color: var(--clr-gris-oscuro);
 }
 
 .contacto-formulario-input:focus {
@@ -143,7 +146,7 @@
 }
 
 .contacto-formulario button {
-    background-color: white;
+    background-color: var(--clr-blanco);
 }
 
 /* --------------- CONTACTO END --------------- */
