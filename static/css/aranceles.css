@@ -34,6 +34,7 @@
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
+    color: var(--clr-negro);
     font-size: var(--fs-mobile-6);
 }
 
@@ -192,7 +193,16 @@
 .aranceles-table-separador td:nth-child(2),
 .aranceles-table-separador td:nth-child(3) {
     border-right: 1px solid var(--clr-gris);
+}
 
+.aranceles-table td:first-child {
+    color:var(--clr-gris-oscuro);
+}
+
+.aranceles-table td:nth-child(2),
+.aranceles-table td:nth-child(3),
+.aranceles-table td:nth-child(4) {
+    color:var(--clr-negro);
 }
 
 .aranceles-texto p {
