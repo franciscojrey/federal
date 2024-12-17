@@ -136,19 +136,26 @@
             
             <section class="ola-inferior-dolar-mep"></section>          
 
-            <section class="abrir-cuenta-container">
-                <!--
-                <div class="abrir-cuenta">
-                    <div class="abrir-cuenta-box">
-                        <img src="static/img/candado-superior.svg" class="abrir-cuenta-img" alt="">
-                        <img src="static/img/candado-inferior.svg" class="abrir-cuenta-img" alt="">
-                        <div class="abrir-cuenta-texto">
-                            <h3 class="abrir-cuenta-titulo">Abri tu cuenta</h3>                           
-                            <a href="" class="abrir-cuenta-boton">Abrir cuenta</a>
-                        </div>
+            <section class="card-slider-section">
+                <!-- Container for Cards -->
+                <div class="card-container" id="card-container">
+                    <div class="card active" id="card-1">
+                        <p>Card 1</p>
+                    </div>
+                    <div class="card" id="card-2">
+                        <p>Card 2</p>
+                    </div>
+                    <div class="card" id="card-3">
+                        <p>Card 3</p>
                     </div>
                 </div>
-                -->
+            
+                <!-- Dots Navigation -->
+                <div class="dots-container">
+                    <span class="dot active" onclick="showCard(1)"></span>
+                    <span class="dot" onclick="showCard(2)"></span>
+                    <span class="dot" onclick="showCard(3)"></span>
+                </div>
             </section>
 
             <section class="acerca-de-container">
@@ -186,5 +193,7 @@
         <script src="static/js/header.js"></script>
 
         <script src="static/js/footer.js"></script>
+
+        <script src="static/js/cards.js"></script>
     </body>    
 </html>

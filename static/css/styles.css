@@ -326,59 +326,50 @@ p {
 /* --------------- OLA INFERIOR DOLAR MEP END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
-/* AJUSTAR TAMAÑOS COLORES ETC 
-.abrir-cuenta {
-    width:90%;
+.card-container {
+    display: flex;
+    overflow: hidden; /* Ensures cards don't overflow the container */
+    position: relative;
+    width: 300px; /* Matches card width */
+    height: 200px;
     margin: 0 auto;
-    padding: 1.5em;
-    text-align: left;
-    border: 4px solid lightblue;
+}
+
+.card {
+    flex: 0 0 100%; /* Makes each card take up full container width */
+    display: none;
+    position: absolute;
+    transition: transform 0.3s ease-in-out; /* Smooth swipe animation */
+    background-color: var(--clr-gris, #f0f0f0);
+    border: 2px solid var(--clr-celeste, #00B7F3);
     border-radius: 18px;
-    background-color: var(--clr-gris);
-    box-shadow: 
-        inset 0 0 10px rgba(0, 0, 0, 0.2),
-        0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
-.abrir-cuenta-box {
-    display: inline-grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    grid-gap: 1em;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "img texto"
+.card.active {
+    display: block;
+    transform: translateX(0);
 }
 
-.abrir-cuenta-img { 
-    grid-area: img; 
-    max-width: 400px;
-    margin: 0 auto;
-    width: 100%;
+.dots-container {
+    margin-top: 1.5em;
+    text-align: center;
 }
 
-.abrir-cuenta-texto { grid-area: texto; }
-
-.abrir-cuenta-titulo {
-    line-height: 1.2em;
-    margin-bottom: 1em;
-    font-size: 1.4rem;
-    font-family: fuente1;
-    color: var(--clr-negro); 
-}
-
-.abrir-cuenta-boton {
-    font-family: fuente2;
-    color: var(--clr-blanco);
-    background-color: var(--clr-celeste);
-    padding: .6em .9em;
-    border-radius: 18px;
+.dot {
     display: inline-block;
-    font-size: .8rem;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-gris, #ddd);
+    border-radius: 50%;
+    margin: 0 0.5em;
+    cursor: pointer;
 }
-*/
+
+.dot.active {
+    background-color: var(--clr-celeste, #00B7F3);
+}
 /* --------------- ABRIR CUENTA END --------------- */
 
 /* --------------- ACERCA DE START --------------- */
