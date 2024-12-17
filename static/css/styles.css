@@ -215,12 +215,13 @@ p {
 .dolar-mep-container {
     background-color: var(--clr-blanco);
     background-image: url("../img/home/fondo_home_dolar_mep.svg");
+    
 }
 
 .dolar-mep {
     max-width: 1100px;
     width:90%;
-    margin: 2em auto 2em auto;
+    margin: 2em auto 0 auto;
     padding: 1.5em;
     text-align: left;
     border: 4px solid lightblue;
@@ -260,11 +261,69 @@ p {
     color: var(--clr-negro); 
 }
 
+/* --------------- TIPO ESPECIES START --------------- */
+
+.tipos-especies {
+    padding-block: 8px;
+    overflow: hidden;
+    user-select: none;
+    --gap: -1px;
+    display: flex;
+    gap: var(--gap);
+}
+
+.tipos-especies ul {
+    list-style: none;
+    flex-shrink: 0;
+    min-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+    padding:0;
+}
+
+.tipo-especie {
+    color: var(--clr-blanco);
+    font-size: var(--fs-mobile-6);
+    font-family: fuente2;
+    width: 20px;
+    padding: 1em;
+    white-space: res;
+}
+
+.tipo-especie-espacio-blanco {
+    width: 0;
+    padding: 0;
+}
+
+.tipos-especies:hover ul {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    to {
+        transform: translateX(calc(-100% - var(--gap)));
+    }
+}
+
+/* --------------- TIPO ESPECIES END --------------- */
+
 /* --------------- DOLAR MEP END --------------- */
 
-/* --------------- TIPO ESPECIES END --------------- */
+/* --------------- OLA INFERIOR DOLAR MEP START --------------- */
 
-/* --------------- TIPO ESPECIES END --------------- */
+.ola-inferior-dolar-mep {
+    background-image: url('../img/home/fondo_home_dolar_mep2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 20vh;    
+}
+
+/* --------------- OLA INFERIOR DOLAR MEP END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
 /* AJUSTAR TAMAÑOS COLORES ETC 
@@ -465,7 +524,23 @@ p {
     .dolar-mep-titulo {
         font-size: var(--fs-desktop-3);
     }
+
+    /* --------------- TIPO ESPECIES START --------------- */
+
+    .tipo-especie {
+        font-size: var(--fs-desktop-6);
+    }
     
+    /* --------------- TIPO ESPECIES END --------------- */
+
+    /* --------------- DOLAR MEP END --------------- */
+
+    /* --------------- DOLAR MEP END --------------- */
+    
+    .ola-inferior-dolar-mep {
+        height: 20vh;
+    }
+
     /* --------------- DOLAR MEP END --------------- */
 
     /* --------------- ACERCA DE START --------------- */
