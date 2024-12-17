@@ -7,7 +7,7 @@ html {
 
 @font-face {
     font-family: 'fuente1';
-    src: url(../fonts/fuente1.otf);
+    src: url(../fonts/fuente1.ttf);
 }
 
 @font-face {
@@ -155,7 +155,7 @@ p {
     display: inline-grid;
     justify-items: center;
     align-items: center;
-    max-width: 1500px;
+    max-width: 1300px;
     grid-gap: 2em;
     width: 100%;
     margin: 4em auto 4em auto;
@@ -214,11 +214,13 @@ p {
 
 .dolar-mep-container {
     background-color: var(--clr-blanco);
+    background-image: url("../img/home/fondo_home_dolar_mep.svg");
 }
 
 .dolar-mep {
+    max-width: 1100px;
     width:90%;
-    margin: 0 auto;
+    margin: 2em auto 2em auto;
     padding: 1.5em;
     text-align: left;
     border: 4px solid lightblue;
@@ -243,7 +245,7 @@ p {
 
 .dolar-mep-img { 
     grid-area: img; 
-    max-width: 400px;
+    max-width: 250px;
     margin: 0 auto;
     width: 100%;
 }
@@ -259,6 +261,10 @@ p {
 }
 
 /* --------------- DOLAR MEP END --------------- */
+
+/* --------------- TIPO ESPECIES END --------------- */
+
+/* --------------- TIPO ESPECIES END --------------- */
 
 /* --------------- ABRIR CUENTA START --------------- */
 /* AJUSTAR TAMAÑOS COLORES ETC 
@@ -325,7 +331,7 @@ p {
 .acerca-de {
     width:90%;
     margin: 4em auto;
-    padding: 2em .5em;
+    padding: 4em .5em;
     text-align: left;
 }
 
@@ -343,7 +349,7 @@ p {
 
 .acerca-de-img { 
     grid-area: img; 
-    max-width: 400px;
+    max-width: 150px;
     margin: 0 auto;
     width: 100%;
 }
@@ -372,9 +378,12 @@ p {
 
 .opera-container {
     background-color: var(--clr-blanco);
+    margin-bottom: 4em;
 }
 
 .opera-box {
+    align-items: center;
+    max-width: 800px;
     display: inline-grid;
     gap: 2em;
     width: 100%;
@@ -388,6 +397,7 @@ p {
 .opera-texto { 
     grid-area: texto; 
     text-align: center;
+    margin: 0 1em;
 }
 
 .opera-titulo {
@@ -404,10 +414,8 @@ p {
     font-family: fuente2;
     font-size: var(--fs-mobile-5);
     line-height: 1.4rem;
-    width: 75%;
-    margin: 0 auto 2rem auto;
+    margin-bottom: 1em;
 }
-
 
 .opera-img { 
     grid-area: img; 
@@ -482,13 +490,28 @@ p {
 
     /* --------------- OPERA END --------------- */
 
+    .opera-box {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "img texto";
+    }
+
+    .opera-texto { 
+        text-align: left;
+    }
+
     .opera-titulo {
         font-size: var(--fs-desktop-3);
+        margin-bottom: .5em;
     }
     
     .opera-descripcion {
         font-size: var(--fs-desktop-5);
     }
 
+    .opera-img { 
+        max-width: 300px;
+    }
+    
     /* --------------- OPERA END --------------- */
 }
