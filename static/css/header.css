@@ -175,4 +175,8 @@ header {
         margin-left: .9em;
         font-weight: bolder;
     }
+
+    .boton {
+        font-size: var(--fs-desktop-5);
+    }
 }
