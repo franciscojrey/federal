@@ -330,6 +330,8 @@ p {
 
 .abrir-cuenta {
     padding: 0 1em;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 .abrir-cuenta-texto {
@@ -361,22 +363,25 @@ p {
     margin: 0 auto;
     padding: 1em; 
     box-sizing: border-box;
+    justify-content: center;
 }
 
 .abrir-cuenta-card {
-    display: none; /* Hide all cards */
+    display: none;
     transition: opacity 0.3s ease-in-out;
     background-color: var(--clr-gris, #f0f0f0);
     border: 2px solid var(--clr-celeste, #00B7F3);
     border-radius: 18px;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    overflow-wrap: break-word; /* Handle long text gracefully */
 }
 
 .abrir-cuenta-card.activo {
-    display: block; /* Show active card */
-    opacity: 1; /* Ensure visibility */
+    display: block;
+    opacity: 1;
 }
+
 .abrir-cuenta-card.activo {
     display: block;
     transform: translateX(0);
@@ -419,6 +424,10 @@ p {
     font-size: var(--fs-mobile-5);
 }
 
+.abrir-cuenta-flecha {
+    display:none;
+}
+
 .abrir-cuenta-puntos-container {
     text-align: center;
 }
@@ -427,14 +436,14 @@ p {
     display: inline-block;
     width: 15px;
     height: 15px;
-    background-color: var(--clr-gris, #ddd);
+    background-color: var(--clr-celeste-oscuro);
     border-radius: 50%;
     margin: 0 0.5em;
     cursor: pointer;
 }
 
 .abrir-cuenta-punto.activo {
-    background-color: var(--clr-celeste, #00B7F3);
+    background-color: var(--clr-celeste);
 }
 /* --------------- ABRIR CUENTA END --------------- */
 
@@ -599,6 +608,44 @@ p {
     }
 
     /* --------------- DOLAR MEP END --------------- */
+
+    
+    /* --------------- ABRIR CUENTA START --------------- */
+    
+    /* --------------- ABRIR CUENTA END --------------- */
+
+    .abrir-cuenta-texto {
+        text-align: center;
+    }
+
+    .abrir-cuenta-epigrafe {
+        font-size: var(--fs-desktop-6);
+    }
+    
+    .abrir-cuenta-texto h3 {
+        font-size: var(--fs-desktop-3);
+    }
+    
+    .abrir-cuenta-subtitulo {
+        font-size: var(--fs-desktop-5);
+    }
+
+    .abrir-cuenta-container {
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .abrir-cuenta-card {
+        display: block;
+    }
+
+    .abrir-cuenta-flecha {
+        display: block;
+    }
+
+    .abrir-cuenta-puntos-container {
+        display: none;
+    }
 
     /* --------------- ACERCA DE START --------------- */
 

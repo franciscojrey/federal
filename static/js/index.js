@@ -1,20 +1,30 @@
+var esMobile = window.innerWidth < 769;
+
+function manejarReajustePagina() {
+    esMobile = window.innerWidth < 769;
+}
+
+window.addEventListener('resize', manejarReajustePagina);
+
 let cardSeleccionadaIndex = 1;
 const totalCards = 3;
 
 // Funcion para mostrar la card seleccionada
 function mostrarCard(cardIndex) {
-    cardSeleccionadaIndex = cardIndex; // Update current card index
+    if (esMobile) {
+        cardSeleccionadaIndex = cardIndex; // Update current card index
 
-    const cards = document.querySelectorAll('.abrir-cuenta-card');
-    const puntos = document.querySelectorAll('.abrir-cuenta-punto');
-
-    // Hide all cards and remove 'activo' class from puntos
-    cards.forEach(card => card.classList.remove('activo'));
-    puntos.forEach(punto => punto.classList.remove('activo'));
-
-    // Show the selected card and highlight the punto
-    document.getElementById(`abrir-cuenta-card-${cardIndex}`).classList.add('activo');
-    puntos[cardIndex - 1].classList.add('activo');
+        const cards = document.querySelectorAll('.abrir-cuenta-card');
+        const puntos = document.querySelectorAll('.abrir-cuenta-punto');
+    
+        // Hide all cards and remove 'activo' class from puntos
+        cards.forEach(card => card.classList.remove('activo'));
+        puntos.forEach(punto => punto.classList.remove('activo'));
+    
+        // Show the selected card and highlight the punto
+        document.getElementById(`abrir-cuenta-card-${cardIndex}`).classList.add('activo');
+        puntos[cardIndex - 1].classList.add('activo');
+    }
 }
 
 // Swipe derecha izq funcionalidad 
@@ -33,15 +43,17 @@ cardContainer.addEventListener('touchend', (e) => {
 });
 
 function swipe() {
-    const swipeMínimo = 50; // Distancia mínima a recorrer para ejecutar el swipe
-    if (swipeFin < swipeInicio - swipeMínimo) {
-        // Swipe hacia la izquierda
-        cardSeleccionadaIndex = cardSeleccionadaIndex < totalCards ? cardSeleccionadaIndex + 1 : 1;
-    } else if (swipeFin > swipeInicio + swipeMínimo) {
-        // Swipe hacia la derecha
-        cardSeleccionadaIndex = cardSeleccionadaIndex > 1 ? cardSeleccionadaIndex - 1 : totalCards;
+    if (esMobile) {
+        const swipeMínimo = 50; // Distancia mínima a recorrer para ejecutar el swipe
+        if (swipeFin < swipeInicio - swipeMínimo) {
+            // Swipe hacia la izquierda
+            cardSeleccionadaIndex = cardSeleccionadaIndex < totalCards ? cardSeleccionadaIndex + 1 : 1;
+        } else if (swipeFin > swipeInicio + swipeMínimo) {
+            // Swipe hacia la derecha
+            cardSeleccionadaIndex = cardSeleccionadaIndex > 1 ? cardSeleccionadaIndex - 1 : totalCards;
+        }
+        mostrarCard(cardSeleccionadaIndex);
     }
-    mostrarCard(cardSeleccionadaIndex);
 }
 
 // Mostrar Card al cargar el contenido por primera vez
