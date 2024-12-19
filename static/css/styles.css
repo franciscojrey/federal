@@ -248,7 +248,7 @@ p {
 
 .dolar-mep-img { 
     grid-area: img; 
-    max-width: 250px;
+    max-width: 220px;
     margin: 0 auto;
     width: 100%;
 }
@@ -704,7 +704,7 @@ p {
     }
 
     .opera-img { 
-        max-width: 300px;
+        max-width: 250px;
     }
     
     /* --------------- OPERA END --------------- */
