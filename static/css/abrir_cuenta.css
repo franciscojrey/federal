@@ -1,0 +1,95 @@
+/* --------------- ABRIR CUENTA START --------------- */
+
+.abrir-cuenta-container{    
+    max-width: 400px;
+    margin: 4em auto 4em auto;
+    display: block;
+}
+
+.abrir-cuenta-encabezado {
+    color: var(--clr-celeste-oscuro);
+    font-weight: 700;
+    font-family: fuente1;
+    font-size: var(--fs-mobile-4);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    padding: .5em 1em;
+    border-radius: 18px;
+    margin-bottom: 3em;
+}
+
+.abrir-cuenta-box {   
+    border-top: 1px solid var(--clr-celeste);
+    border-bottom: 1px solid var(--clr-celeste);
+    padding: 1.5em 0;
+    margin: 0 1em;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    grid-template-areas: 
+    "titulo img"
+    "texto img"
+    "btn-contactos btn-contactos";
+}
+
+.abrir-cuenta-imagen{ 
+    grid-area: img; 
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.abrir-cuenta-box h3 {
+    grid-area: titulo;
+    font-family: fuente1;
+    color: var(--clr-rojo-intermedio);
+    font-size: var(--fs-mobile-3);
+    text-align: left;
+    font-weight: 700;
+}
+
+.abrir-cuenta-box p {
+    grid-area: texto;
+    font-family: fuente1;
+    text-align: left;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-4);
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+
+.abrir-cuenta-box-contactos {
+    grid-area: btn-contactos;
+}
+
+
+/* --------------- ABRIR CUENTA END --------------- */
+
+/* Desktop */
+@media (min-width: 769px) {
+
+    .abrir-cuenta-container {
+        max-width: 1200px;
+    }
+    .abrir-cuenta-box {  
+        margin-top: 12em; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "titulo titulo img"
+        "texto texto img"
+        "btn-wsp btn-contactos img";
+    }
+
+    .abrir-cuenta-imagen{ 
+        grid-area: img; 
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .abrir-cuenta-box h3 {
+        font-size: var(--fs-desktop-2);
+    }
+    
+    .abrir-cuenta-box p {
+        font-size: var(--fs-desktop-5);
+    }
+}

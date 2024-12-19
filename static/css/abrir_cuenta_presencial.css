@@ -22,7 +22,7 @@ h3 {
     "btn-wsp btn-contactos";
 }
 
-.cuenta-presencial-hero img{ 
+.cuenta-presencial-imagen{ 
     grid-area: img; 
     max-width: 100px;
     margin: 0 auto;
@@ -100,6 +100,10 @@ h3 {
 
 /* Desktop */
 @media (min-width: 769px) {
+
+    .cuenta-presencial-container {
+        max-width: 1200px;
+    }
     .cuenta-presencial-hero {  
         margin-top: 12em; 
         grid-template-columns: 1fr 1fr 1fr;
@@ -108,7 +112,13 @@ h3 {
         "texto texto img"
         "btn-wsp btn-contactos img";
     }
-    
+
+    .cuenta-presencial-imagen{ 
+        grid-area: img; 
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
     .cuenta-presencial-hero h3 {
         font-size: var(--fs-desktop-2);
     }
