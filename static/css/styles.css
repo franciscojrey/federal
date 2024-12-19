@@ -445,6 +445,10 @@ p {
 .abrir-cuenta-punto.activo {
     background-color: var(--clr-celeste);
 }
+
+.abrir-cuenta a {
+    margin-top: 2em;
+}
 /* --------------- ABRIR CUENTA END --------------- */
 
 /* --------------- ACERCA DE START --------------- */

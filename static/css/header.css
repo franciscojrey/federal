@@ -23,6 +23,7 @@ header {
     padding: 0.5em 1em;
     background-color: var(--clr-gris);
     color: var(--clr-secondary);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
@@ -108,7 +109,6 @@ header {
 
 .dropdown-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     border-bottom: 1px solid white;
@@ -122,6 +122,16 @@ header {
 
 .dropdown-header span {
     font-size: var(--fs-mobile-5);
+}
+
+.dropdown-header img {
+    margin-right: 1em;
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-header-flecha {
+    margin-left: auto;
 }
 
 .submenu {
@@ -163,9 +173,13 @@ header {
 @media (min-width: 769px) {
 
     header {
+        position: fixed;
         margin: 1em 2em;
         border-radius: 18px;
         background-color: var(--clr-gris);
+        top: 0;
+        left: 0;
+        width: 95%;
     }
 
     .nombre {
@@ -178,5 +192,41 @@ header {
 
     .boton {
         font-size: var(--fs-desktop-5);
+    }
+
+    .hamburguesa {
+        order: -1;
+    }
+    
+    .dropdown-menu {
+        top: 5.2em;
+        left: 2em;
+        width: 20%;
+        height: auto;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        border-bottom-right-radius: 18px;
+        border-bottom-left-radius: 18px;
+        padding-top: 2em;
+        max-height: 90vh; /* Ensures it doesn't exceed the viewport height */
+        overflow-y: auto; /* Enables vertical scrolling */
+        box-sizing: border-box;
+        scrollbar-width: none; /* Hides scrollbar in Firefox */
+    }
+    
+    /* Hides scrollbar in WebKit browsers like Chrome, Safari, and Edge */
+    .dropdown-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    .dropdown-header {
+        border-bottom: none;
+    }
+
+    .dropdown-item.open .submenu {
+        border-bottom: none;
+    } 
+    
+    .cerrar-menu {
+        display: none;
     }
 }

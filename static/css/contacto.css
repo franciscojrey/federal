@@ -80,9 +80,14 @@
 }
 
 .contacto-formulario {
-    border-top: 1px solid var(--clr-celeste);
     padding-top: 2em;
-    margin-top: 2em;
+    margin-top: 2em;    
+    border-top: 1px solid var(--clr-celeste);
+}
+
+.contacto-formulario form {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .contacto-formulario-titulo {
@@ -157,6 +162,10 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "card img";
+    }
+
+    .contacto-imagen { 
+        max-width: 150px;
     }
 
     .contacto-card {
