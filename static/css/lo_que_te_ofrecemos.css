@@ -26,6 +26,7 @@
 }
 
 .servicios-dolar-mep-precios {
+    width: 100%;
     background-color: rgb(224, 233, 236, 0.6);
     grid-area: precios;
     display: grid;
@@ -131,6 +132,140 @@
 
 /* --------------- BENEFICIOS END --------------- */
 
+/* CARDS */
+
+.servicios-inversion {
+    padding: 0 1em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.servicios-inversion-texto {
+    margin-bottom: 2em;
+}
+
+.servicios-inversion-texto h3 {
+    color: var(--clr-celeste-oscuro);
+    font-family: fuente1;
+    font-size: var(--fs-mobile-3);
+    margin-bottom: .5em;   
+}
+
+.servicios-inversion-subtitulo {
+    color: var(--clr-negro);
+    font-family: fuente2;
+    font-size: var(--fs-mobile-5);
+}
+
+.servicios-inversion-container {
+    display: block;
+    margin: 0 auto;
+    padding: 1em; 
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.servicios-inversion-box {
+    display:flex;
+    gap: 1em;
+}
+
+.servicios-inversion-card {
+    display: none;
+    position: relative;
+    transition: opacity 0.3s ease-in-out;
+    background-color: var(--clr-gris, #f0f0f0);
+    padding: 1em;
+    overflow-wrap: break-word;
+    border: 1px solid transparent;
+    border-radius: 18px;
+    z-index: 1;
+    height: 180px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.servicios-inversion-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius:18px;
+    padding: 2px;
+    background: linear-gradient(to bottom, #AC282880, #E0E9EC);
+    z-index: -1;
+    mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+}
+
+.servicios-inversion-card.activo {
+    display: block;
+    opacity: 1;
+}
+
+.servicios-inversion-card.activo {
+    display: block;
+    transform: translateX(0);
+}
+
+.servicios-inversion-card-encabezado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.servicios-inversion-card-encabezado-titulo {
+    font-family: fuente1;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-3);
+    font-weight: 700;
+}
+
+.servicios-inversion-card-encabezado-numero {
+    font-family: fuente1;
+    color: var(--clr-celeste);
+    font-size: var(--fs-mobile-0);
+    font-weight: 700;
+    margin-left: .1em;
+}
+
+.servicios-inversion-card-encabezado img {
+    margin: 0 auto;
+    max-width: 50px;
+}
+
+.servicios-inversion-card-subtitulo {
+    text-align: left;
+    font-family: fuente2;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-5);
+}
+
+.servicios-inversion-puntos-container {
+    margin-top: 2em;
+    text-align: center;
+}
+
+.servicios-inversion-punto {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: var(--clr-celeste-oscuro);
+    border-radius: 50%;
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.servicios-inversion-punto.activo {
+    background-color: var(--clr-celeste);
+}
+
+/* CARDS */
+
 /* --------------- TEST START --------------- */
 
 .test-container {
@@ -211,7 +346,9 @@
 /* Desktop */
 @media (min-width: 769px) {
 
-    .servicios-dolar-mep-container {       
+    .servicios-dolar-mep-container {
+        padding: 0 2em;
+        gap: 1em;
         margin-top: 10em;
         max-width: 1100px;
         grid-template-columns: 1fr 1fr;
@@ -233,8 +370,14 @@
         "servicios-dolar-mep-boton servicios-dolar-mep-boton";
     }
 
+    /* BENEFICIOS START */
+
     .beneficios-container {
         max-width: 1100px;
+    }
+
+    .beneficios-texto h3 {
+        font-size: var(--fs-desktop-3);
     }
 
     .beneficios-box {
@@ -248,6 +391,89 @@
         padding: 2em 1em;
     }
 
+    .beneficios-descripcion {
+        font-size: var(--fs-desktop-5);
+    }
+
+    /* BENEFICIOS END */
+
+    /* SERVICIOS DE INVERSIÓN START */ 
+
+    .servicios-inversion-texto {
+        text-align: center;
+        margin-bottom: 5em;
+    }
+    
+    .servicios-inversion-texto h3 {
+        font-size: var(--fs-desktop-3);
+    }
+    
+    .servicios-inversion-card-subtitulo {
+        font-size: var(--fs-desktop-5);
+    }
+
+    .servicios-inversion-container {
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .servicios-inversion-box {
+        margin-bottom: 6em;
+    }
+    
+    .servicios-inversion-card {
+        display: block;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    #servicios-inversion-card-4::before,
+    #servicios-inversion-card-5::before,
+    #servicios-inversion-card-6::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: -2px;
+        padding: 2px;
+        background: linear-gradient(to bottom, #E0E9EC, #AC282880);
+        z-index: -1;
+        mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+        mask-composite: exclude;
+        -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        border-radius:18px;
+    }
+
+    
+    .servicios-inversion-card-encabezado img {
+        margin: -4em auto 0 auto;
+        height: 130px;
+        max-width: 130px;
+    }
+
+    .servicios-inversion-card-subtitulo {
+        text-align: center;
+    }
+
+
+    .servicios-inversion-puntos-container {
+        display: none;
+    }
+
+    /* SERVICIOS DE INVERSIÓN END */ 
+
+    /* TEST DEL INVERSOR START */
+
+    .test-texto h3 {
+        font-size: var(--fs-desktop-4);
+    }
+
+    /* TEST DEL INVERSOR END */
+
+
+    /* SERVICIOS FINANCIAMIENTO START */
+
     .servicios-financiamiento-box {
         display: flex;
     }
@@ -255,4 +481,18 @@
     .servicios-financiamiento-card img {
         max-width: none;
     }
+
+    .servicios-financiamiento-texto h3 {
+        font-size: var(--fs-desktop-3);
+    }
+    
+    .servicios-financiamiento-texto p {
+        font-size: var(--fs-desktop-5);
+    }
+       
+    .servicios-financiamiento-descripcion {
+        font-size: var(--fs-desktop-6);
+    }
+
+    /* SERVICIOS FINANCIAMIENTO END */
 }
