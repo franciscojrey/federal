@@ -132,6 +132,7 @@
 @media (min-width: 769px) {
 
     .faq-container {
+        margin-top: 12em;
         grid-template-columns: 1fr 1fr;
         max-width: 1200px;
         align-items: start;

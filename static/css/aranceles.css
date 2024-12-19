@@ -217,6 +217,10 @@
 /* Desktop */
 @media (min-width: 769px) {
 
+    .aranceles-container {
+        margin-top: 12em;
+    }
+
     .selector-box p{   
         font-size: var(--fs-desktop-4);
     }

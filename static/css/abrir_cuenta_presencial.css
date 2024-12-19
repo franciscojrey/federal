@@ -100,7 +100,8 @@ h3 {
 
 /* Desktop */
 @media (min-width: 769px) {
-    .cuenta-presencial-hero {   
+    .cuenta-presencial-hero {  
+        margin-top: 12em; 
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
         "titulo titulo img"

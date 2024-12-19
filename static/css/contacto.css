@@ -158,6 +158,10 @@
 
 /* Desktop */
 @media (min-width: 769px) {
+
+    .contacto-container {
+        margin-top: 12em;
+    }
     .contacto-card-imagen {        
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 

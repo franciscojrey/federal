@@ -47,5 +47,7 @@
 
 /* Desktop */
 @media (min-width: 769px) {
-
+    .terminos-condiciones-container {
+        margin-top: 12em;
+    }
 }
