@@ -7,7 +7,7 @@ function manejarReajustePagina() {
 window.addEventListener('resize', manejarReajustePagina);
 
 let cardSeleccionadaIndex = 1;
-const totalCards = 3;
+const totalCards = 6;
 
 // Funcion para mostrar la card seleccionada
 function mostrarCard(cardIndex) {

@@ -343,6 +343,28 @@
 
 /* --------------- BENEFICIOS END --------------- */
 
+/* EMPEZA AHORA START */
+
+.empeza-ahora {
+    margin-bottom: 4em;
+    align-items: center;
+}
+
+.empeza-ahora img {
+    max-width: 100px;
+}
+
+.empeza-ahora p {
+    font-family: fuente2;
+    color: var(--clr-negro);
+    font-size: var(--fs-mobile-3);
+    font-weight: 700;
+    max-width: 500px;
+    margin: 1em auto .5em auto;
+}
+
+/* EMPEZA AHORA END */
+
 /* Desktop */
 @media (min-width: 769px) {
 
@@ -495,4 +517,25 @@
     }
 
     /* SERVICIOS FINANCIAMIENTO END */
+    
+    /* EMPEZA AHORA START */
+
+    .empeza-ahora {
+        display: flex;
+        justify-content: center;
+        gap: 4em;        
+    }
+
+    .empeza-ahora img {
+        max-width: 130px;
+    }
+
+    .empeza-ahora p {
+        text-align: left;
+        font-size: var(--fs-desktop-3);
+        margin: 0 auto .5em auto;
+    }
+
+    /* EMPEZA AHORA END */
+
 }
