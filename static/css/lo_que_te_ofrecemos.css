@@ -347,6 +347,52 @@
 
 /* --------------- BENEFICIOS END --------------- */
 
+/* --------------- OPERAR SECTORES START --------------- */
+
+.operar-sectores {
+    margin: 4em 0;
+    background-color: var(--clr-rojo-intermedio);
+}
+
+.operar-sectores-box {
+    margin: 0 2em;
+    padding: 2em 0;
+}
+
+.operar-sectores-titulo {
+    font-family: fuente1;
+    font-size: var(--fs-mobile-5);
+    font-weight: 700;
+    color: var(--clr-blanco);
+}
+
+.operar-sectores-card {
+    margin: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+.operar-sectores-sector {
+    padding: 0 2em;
+}
+
+.operar-sectores-sector-titulo {
+    color: var(--clr-blanco);
+    font-size: var(--fs-desktop-5);
+    font-weight: 700;
+    font-family: fuente1;
+    margin-top: 1em;
+}
+
+.operar-sectores-sector-descripcion {
+    color: var(--clr-blanco);
+    font-size: var(--fs-desktop-7);
+    font-family: fuente2;
+    margin-top: 1em;
+}
+
+/* --------------- OPERAR SECTORES END --------------- */
+
 /* EMPEZA AHORA START */
 
 .empeza-ahora {
