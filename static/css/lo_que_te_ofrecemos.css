@@ -374,6 +374,11 @@
 
 .operar-sectores-sector {
     padding: 0 2em;
+    display: none;
+}
+
+.sector-activo {
+    display: block;
 }
 
 .operar-sectores-sector-titulo {

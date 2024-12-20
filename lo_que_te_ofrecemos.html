@@ -179,13 +179,27 @@
                 <div class="operar-sectores-box">
                     <p class="operar-sectores-titulo">Operá en los <span class="celeste">mercados más grandes</span> del país y enterate de las empresas en las que podés invertir</p>
                     <div class="operar-sectores-card">
-                        <img src="static/img/lo_que_te_ofrecemos/flecha_izquierda.svg" alt="">
-                        <div class="operar-sectores-sector">
-                            <img src="static/img/lo_que_te_ofrecemos/sector_financiero.svg" alt="">
-                            <p class="operar-sectores-sector-titulo">Sector financiero</p>
-                            <p class="operar-sectores-sector-descripcion">Banco Macro, Galicia, Banco Francés, Grupo Financiero, Banco Supervielle, ByMA Macro</p>
+                        <img src="static/img/lo_que_te_ofrecemos/flecha_izquierda.svg" onclick="cambiarSector('izquierda')" alt="Flecha izquierda">
+                        
+                        <div class="operar-sectores-sectors-container">
+                            <div class="operar-sectores-sector sector-activo" id="operar-sectores-sector-1">
+                                <img src="static/img/lo_que_te_ofrecemos/sector_financiero.svg" alt="">
+                                <p class="operar-sectores-sector-titulo">Sector financiero</p>
+                                <p class="operar-sectores-sector-descripcion">Banco Macro, Galicia, Banco Francés, Grupo Financiero, Banco Supervielle, ByMA Macro</p>
+                            </div>
+                            <div class="operar-sectores-sector" id="operar-sectores-sector-2">
+                                <img src="static/img/lo_que_te_ofrecemos/sector_financiero.svg" alt="">
+                                <p class="operar-sectores-sector-titulo">Sector agrícola</p>
+                                <p class="operar-sectores-sector-descripcion">Banco Macro, Galicia, Banco Francés, Grupo Financiero, Banco Supervielle, ByMA Macro</p>
+                            </div>
+                            <div class="operar-sectores-sector" id="operar-sectores-sector-3">
+                                <img src="static/img/lo_que_te_ofrecemos/sector_financiero.svg" alt="">
+                                <p class="operar-sectores-sector-titulo">Sector industrial</p>
+                                <p class="operar-sectores-sector-descripcion">Banco Macro, Galicia, Banco Francés, Grupo Financiero, Banco Supervielle, ByMA Macro</p>
+                            </div>
                         </div>
-                        <img src="static/img/lo_que_te_ofrecemos/flecha_derecha.svg" alt="">
+                    
+                        <img src="static/img/lo_que_te_ofrecemos/flecha_derecha.svg" onclick="cambiarSector('derecha')" alt="Flecha derecha">
                     </div>
                 </div>
             </div>

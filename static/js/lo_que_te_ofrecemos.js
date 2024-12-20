@@ -56,5 +56,24 @@ function swipe() {
     }
 }
 
+function cambiarSector(direccion) {
+    const sectores = document.querySelectorAll('.operar-sectores-sector');
+    const sectoresArray = Array.from(sectores);
+    const activoIndex = sectoresArray.findIndex(sector => sector.classList.contains('sector-activo'));
+
+    sectoresArray[activoIndex].classList.remove('sector-activo');
+
+    const totalSectores = sectoresArray.length;
+    let nuevoIndex;
+    if (direccion === 'derecha') {
+        nuevoIndex = (activoIndex + 1) % totalSectores;
+    } else {
+        nuevoIndex = (activoIndex - 1 + totalSectores) % totalSectores;
+    }
+
+    sectoresArray[nuevoIndex].classList.add('sector-activo');
+}
+
+
 // Mostrar Card al cargar el contenido por primera vez
 document.addEventListener('DOMContentLoaded', () => mostrarCard(cardSeleccionadaIndex));
