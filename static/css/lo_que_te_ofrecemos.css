@@ -53,7 +53,7 @@
 
 .servicios-dolar-mep-precio-titulo,
 .servicios-dolar-mep-precio {
-    font-family: fuente2;
+    font-family: fuente1;
     font-size: var(--fs-mobile-3);
     font-weight: 700;
 }
@@ -66,10 +66,14 @@
     color: var(--clr-negro);
 }
 
-.servicios-dolar-mep-precios-descripcion {
+.servicios-dolar-mep-precios-descripcion p {
     color: var(--clr-celeste-oscuro);
     font-size: var(--fs-mobile-5);
-    display: flex;
+    font-family: fuente2;
+}
+
+.servicios-dolar-mep-precios-descripcion ul {
+    display: none;
 }
 
 /* --------------- DOLAR MEP END --------------- */
@@ -372,7 +376,7 @@
         padding: 0 2em;
         gap: 1em;
         margin-top: 10em;
-        max-width: 1100px;
+        max-width: 1250px;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "titulo precios";
@@ -390,6 +394,27 @@
         "servicios-dolar-mep-precio-box-compra servicios-dolar-mep-descripcion"
         "servicios-dolar-mep-precio-box-venta servicios-dolar-mep-descripcion"
         "servicios-dolar-mep-boton servicios-dolar-mep-boton";
+    }
+
+    .servicios-dolar-mep-precio-titulo,
+    .servicios-dolar-mep-precio {
+        font-size: var(--fs-desktop-3);
+    }
+
+    .servicios-dolar-mep-precios-descripcion p {
+        display: none;
+    }
+
+    .servicios-dolar-mep-precios-descripcion ul {
+        display: block;
+    }
+
+    .servicios-dolar-mep-precios-descripcion li {
+        margin: 1em 0;
+        text-align: left;
+        font-family: fuente2;
+        font-size: var(--fs-desktop-5);
+        color: var(--clr-celeste-oscuro);
     }
 
     /* BENEFICIOS START */
