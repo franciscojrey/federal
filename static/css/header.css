@@ -68,11 +68,12 @@ header {
 }
 
 .hamburguesa {
-    font-size: var(--fs-mobile-1);
-    background: none;
-    border: none;
-    color: var(--clr-secondary);
     cursor: pointer;
+    margin-left: .5em;
+}
+
+.hamburguesa-desktop {
+    display: none;
 }
 
 .dropdown-menu {
@@ -220,11 +221,16 @@ header {
         top: 0;
         left: 0;
         width: 95%;
+        padding: 1em 3em;
+    }
+
+    .logo {
+        height: 30px;
     }
 
     .nombre {
         display: block;
-        color: var(--clr-rojo-fuerte);
+        color: var(--clr-rojo-intermedio);
         font-family: fuente1;
         margin-left: .9em;
         font-weight: bolder;
@@ -235,9 +241,16 @@ header {
     }
 
     .hamburguesa {
-        order: -1;
+        display: none;
     }
-    
+
+    .hamburguesa-desktop {
+        display: block;
+        order: -1;
+        margin-right: 3em;
+        cursor: pointer;
+    }    
+
     .dropdown-menu {
         top: 5.2em;
         left: 2em;
@@ -266,7 +279,7 @@ header {
         border-bottom: none;
     } 
     
-    .cerrar-menu {
+    .dropdown-cerrar {
         display: none;
     }
 }
