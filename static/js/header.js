@@ -9,6 +9,10 @@ function toggleDropdown(event) {
     parent.classList.toggle('open');
 }
 
+function toggleFlecha() {
+    
+}
+
 async function cargarHeader() {
     const headerContainer = document.querySelector('#header-container');
     const response = await fetch('header.html');

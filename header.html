@@ -14,12 +14,17 @@
     <button class="hamburguesa" onclick="toggleMenu()">☰</button>
 </header>
 <div class="dropdown-menu" id="menu">
-    <button class="cerrar-menu" onclick="toggleMenu()">✖</button>
+    <div class="dropdown-cerrar">
+        <div class="dropdown-menu-linea"></div>
+        <img class="dropdown-cruz" src="static/img/header/cruz.svg" onclick="toggleMenu()" alt="Cerrar menú">
+    </div>
     <div class="dropdown-item" onclick="toggleDropdown(event)">
         <div class="dropdown-header">
-            <img src="static/img/header/cuenta.svg" alt="">
+            <img src="static/img/header/cuenta.svg" class="dropdown-header-imagen-roja" alt="">
+            <img src="static/img/header/servicios.svg" class="dropdown-header-imagen-negra" alt="">
             <span>Cuenta</span>
-            <span class="dropdown-header-flecha">></span>
+            <img src="static/img/header/flecha_derecha.svg" class="dropdown-header-flecha-derecha" alt="">
+            <img src="static/img/header/flecha_arriba.svg" class="dropdown-header-flecha-arriba" alt="">
         </div>
         <div class="submenu">
             <a href="#">Ingresá</a>
@@ -30,9 +35,11 @@
     </div>
     <div class="dropdown-item" onclick="toggleDropdown(event)">
         <div class="dropdown-header">
-            <img src="static/img/header/servicios.svg" alt="">
+            <img src="static/img/header/cuenta.svg" class="dropdown-header-imagen-roja" alt="">
+            <img src="static/img/header/servicios.svg" class="dropdown-header-imagen-negra" alt="">
             <span>Servicios</span>
-            <span class="dropdown-header-flecha">></span>
+            <img src="static/img/header/flecha_derecha.svg" class="dropdown-header-flecha-derecha" alt="">
+            <img src="static/img/header/flecha_arriba.svg" class="dropdown-header-flecha-arriba" alt="">
         </div>
         <div class="submenu">
             <a href="lo_que_te_ofrecemos.html">Lo que te ofrecemos</a>
@@ -41,9 +48,11 @@
     </div>
     <div class="dropdown-item" onclick="toggleDropdown(event)">
         <div class="dropdown-header">
-            <img src="static/img/header/cotizaciones.svg" alt="">
+            <img src="static/img/header/cuenta.svg" class="dropdown-header-imagen-roja" alt="">
+            <img src="static/img/header/cotizaciones.svg" class="dropdown-header-imagen-negra" alt="">
             <span>Cotizaciones</span>
-            <span class="dropdown-header-flecha">></span>
+            <img src="static/img/header/flecha_derecha.svg" class="dropdown-header-flecha-derecha" alt="">
+            <img src="static/img/header/flecha_arriba.svg" class="dropdown-header-flecha-arriba" alt="">
         </div>
         <div class="submenu">
             <a href="#">Acciones</a>
@@ -61,9 +70,11 @@
     </div>
     <div class="dropdown-item" onclick="toggleDropdown(event)">
         <div class="dropdown-header">
-            <img src="static/img/header/novedades.svg" alt="">
+            <img src="static/img/header/cuenta.svg" class="dropdown-header-imagen-roja" alt="">
+            <img src="static/img/header/novedades.svg" class="dropdown-header-imagen-negra" alt="">
             <span>Novedades</span>
-            <span class="dropdown-header-flecha">></span>
+            <img src="static/img/header/flecha_derecha.svg" class="dropdown-header-flecha-derecha" alt="">
+            <img src="static/img/header/flecha_arriba.svg" class="dropdown-header-flecha-arriba" alt="">
         </div>
         <div class="submenu">
             <a href="#">Blog</a>
@@ -81,9 +92,11 @@
     </div>
     <div class="dropdown-item" onclick="toggleDropdown(event)">
         <div class="dropdown-header">
-            <img src="static/img/header/ayuda.svg" alt="">
+            <img src="static/img/header/cuenta.svg" class="dropdown-header-imagen-roja" alt="">
+            <img src="static/img/header/ayuda.svg"class="dropdown-header-imagen-negra" alt="">
             <span>Ayuda</span>
-            <span class="dropdown-header-flecha">></span>
+            <img src="static/img/header/flecha_derecha.svg" class="dropdown-header-flecha-derecha" alt="">
+            <img src="static/img/header/flecha_arriba.svg" class="dropdown-header-flecha-arriba" alt="">
         </div>
         <div class="submenu">
             <a href="contacto.html">Contacto</a>
