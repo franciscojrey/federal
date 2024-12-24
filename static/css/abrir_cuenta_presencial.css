@@ -4,28 +4,28 @@ h3 {
 }
 
 .cuenta-presencial-container{
-    padding: 0 1em;
+    padding: 0 2em;
     max-width: 1500px;
-    margin: 10em auto 4em auto;
+    margin: 10em auto 6em auto;
 }
 
 /* --------------- CUENTA PRESENCIAL START --------------- */
 
-.cuenta-presencial-hero {   
+.cuenta-presencial-hero {
     margin: 8em auto 4em auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 1em;
     grid-template-areas: 
-    "titulo img"
-    "texto texto"
-    "btn-wsp btn-contactos";
+    "titulo titulo img"
+    "texto texto texto"
+    "btn-wsp btn-contactos btn-contactos";
 }
 
 .cuenta-presencial-imagen{ 
     grid-area: img; 
-    max-width: 100px;
-    margin: 0 auto;
+    max-width: 80px;
+    margin: 1em auto 0 auto;
 }
 
 .cuenta-presencial-hero h3 {
@@ -43,6 +43,7 @@ h3 {
     text-align: left;
     color: var(--clr-negro);
     font-size: var(--fs-mobile-5);
+    margin: 1em 0;
 }
 
 .cuenta-presencial-hero-wsp {
@@ -59,6 +60,8 @@ h3 {
 
 .cuenta-presencial-hero-contactos {
     grid-area: btn-contactos;
+    max-width: 70%;
+    margin: auto 0;
 }
 
 /* --------------- DOCUMENTACIÓN START --------------- */

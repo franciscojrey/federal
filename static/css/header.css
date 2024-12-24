@@ -20,7 +20,7 @@ header {
     z-index:1000;
     display: flex;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
     background-color: var(--clr-gris);
     color: var(--clr-secondary);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
@@ -165,7 +165,7 @@ header {
     text-decoration: none;
     color: var(--clr-negro);
     font-size: var(--fs-mobile-5);
-    padding: 0.2em 0;
+    padding: 0.5em 0;
     font-family: fuente2;
 }
 
