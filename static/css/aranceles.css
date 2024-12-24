@@ -45,12 +45,18 @@
     font-family: Arial, sans-serif;
     text-align: left;
     color: var(--clr-blanco);
-    background-color: var(--clr-rojo-fuerte);
+    background: rgb(208,26,28);
+    background: linear-gradient(180deg, rgba(208,26,28,1) 30%, rgba(233,71,50,1) 100%);
+}
+
+.selector-box,
+.selector-opcion {
+    padding: 0.5em 1em;
 }
 
 .selector-box {
-    padding: 1em 1.2em .2em 1.2em;
     display: flex;
+    padding: 1em 1em;
     border-radius: 4px;
     cursor: pointer;    
 }
@@ -89,20 +95,9 @@
 }
 
 .selector-opcion {
+    padding: 0.5em 1em;
     cursor: pointer;
     font-size: var(--fs-mobile-5);
-    padding: 1em 1.2em;
-}
-
-.selector-opcion-linea-box {
-    padding: 0 1.2em;
-}
-
-.selector-opcion-linea {
-    background-color: white;
-    width: 40%;
-    height: 1px;
-    padding: 0;
 }
 
 .aranceles-card {
@@ -237,8 +232,26 @@
         margin-top: 12em;
     }
 
+    .selector-box {
+        transition: background-color .5s ease-in-out;
+    }
+
+    .selector-box:hover {
+        background-color: rgb(208,26,28);
+
+    }
+
     .selector-box p{   
         font-size: var(--fs-desktop-4);
+    }
+
+    .selector-flecha {
+        margin-right: .7em;
+        transition: margin-right .5s ease-in-out;
+    }
+    
+    .selector-box:hover .selector-flecha {
+        margin-right: 0.1em;
     }
 
     .selector-opcion {
