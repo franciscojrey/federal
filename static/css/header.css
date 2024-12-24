@@ -132,16 +132,9 @@ header {
     height: 20px;
 }
 
-.dropdown-header-imagen-roja {
-    display: none;
-}
 
-.dropdown-item.open .dropdown-header-imagen-negra {
-    display: none;
-}
-
-.dropdown-item.open .dropdown-header-imagen-roja {
-    display: block;
+.dropdown-item.open .dropdown-header-imagen {
+    filter: invert(11%) sepia(99%) saturate(5023%) hue-rotate(354deg) brightness(94%) contrast(89%);
 }
 
 .dropdown-header-flecha-derecha,

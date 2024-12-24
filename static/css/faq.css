@@ -69,6 +69,10 @@
     font-family: fuente2;
 }
 
+.faq-contenido a {
+    color: var(--clr-negro);
+}
+
 .faq-boton-container {
     margin-top: 1em;
 }
