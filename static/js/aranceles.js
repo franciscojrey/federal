@@ -2,10 +2,18 @@
 function arancelesDropdown() {
     const dropdown = document.getElementById('dropdown-opciones');
     const flecha = document.getElementById('selector-flecha');
+    const flechaAbajo = document.getElementById('selector-flecha-abajo');
 
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 
-    flecha.textContent = dropdown.style.display === 'block' ? 'v' : '>';
+    if (dropdown.style.display === 'block'){
+        flecha.style.display = 'none';
+        flechaAbajo.style.display = 'block';
+    } else {
+        flecha.style.display = 'block';
+        flechaAbajo.style.display = 'none';
+    }
+
 }
 
 // Seleccionar opción del dropdown
