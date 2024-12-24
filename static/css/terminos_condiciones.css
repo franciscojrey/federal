@@ -10,7 +10,7 @@
     grid-template-columns: 1fr;
     gap: 1em;
     padding: 0 2em;
-    margin: 10em auto 6em auto;
+    margin: 6em auto;
     grid-auto-rows: auto;
 }
 

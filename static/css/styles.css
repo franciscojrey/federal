@@ -159,7 +159,7 @@ p {
     max-width: 1300px;
     grid-gap: 8em;
     width: 100%;
-    margin: 4em auto 4em auto;
+    margin: 6em auto 4em auto;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "img"
