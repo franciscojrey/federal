@@ -1,5 +1,3 @@
-
-
 // Cargar footer cuando se carga la página
 document.addEventListener('DOMContentLoaded', () => {
     fetch('footer.html')

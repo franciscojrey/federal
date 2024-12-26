@@ -3,6 +3,7 @@
 .abrir-cuenta-comitente-container{    
     max-width: 900px;
     margin: 6em auto;
+    padding: 0 2em;
 }
 
 .abrir-cuenta-comitente-encabezado {
@@ -26,7 +27,6 @@
     border-top: 1px solid var(--clr-celeste);
     border-bottom: 1px solid var(--clr-celeste);
     padding: 1.5em 0;
-    margin: 0 1em;
     align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
