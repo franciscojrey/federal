@@ -8,11 +8,6 @@ function iniciarSwipeAutomatico (){
     }, 3000);
 }
 
-function frenarSwipeAutomatico (){
-    clearInterval(intervaloSwipeAutomatico);
-}
-
-
 function manejarReajustePagina() {
     esMobile = window.innerWidth < 769;
 }
@@ -88,23 +83,6 @@ function cambiarSector(direccion) {
 }
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const sectoresContainer = document.querySelector('.operar-sectores-card');
-    
+document.addEventListener('DOMContentLoaded', () => {   
     iniciarSwipeAutomatico();
-
-    // Pause auto swipe when mouse is over the sectors container
-    sectoresContainer.addEventListener('mouseenter', frenarSwipeAutomatico);
-
-    // Restart auto swipe when mouse leaves the sectors container
-    sectoresContainer.addEventListener('mouseleave', iniciarSwipeAutomatico);
-
-    // Optional: Pause auto swipe when the user interacts with the arrows
-    const flechas = document.querySelectorAll('.operar-sectores-card img');
-    flechas.forEach(flecha => {
-        flecha.addEventListener('click', () => {
-            frenarSwipeAutomatico();
-            iniciarSwipeAutomatico();
-        });
-    });
 });
