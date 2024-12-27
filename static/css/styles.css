@@ -122,6 +122,7 @@ p {
     margin-bottom: 1em;
     font-family: fuente2;
     font-size: var(--fs-mobile-5);
+    max-width: 350px;
 }
 
 .boton-fondo-celeste {
@@ -519,7 +520,7 @@ p {
 .opera-box {
     padding: 6em 2em 0 2em;
     align-items: center;
-    max-width: 800px;
+    max-width: 1000px;
     display: inline-grid;
     gap: 2em;
     width: 100%;

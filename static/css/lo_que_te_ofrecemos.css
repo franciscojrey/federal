@@ -403,7 +403,7 @@
 
 /* --------------- OPERAR SECTORES END --------------- */
 
-/* EMPEZA AHORA START */
+/* --------------- EMPEZA AHORA START --------------- */
 
 .empeza-ahora {
     margin-bottom: 6em;
@@ -424,7 +424,7 @@
     margin: 1em auto .5em auto;
 }
 
-/* EMPEZA AHORA END */
+/* --------------- EMPEZA AHORA END --------------- */
 
 @media (min-width: 490px) {
     .operar-sectores-sector {
@@ -628,10 +628,11 @@
     }
 
     .operar-sectores-sector-descripcion {
-        margin: 0 10em
+        margin: 1em 10em;
     }
 
     /* OPERAR SECTORES */
+
     /* EMPEZA AHORA START */
 
     .empeza-ahora {
@@ -645,10 +646,17 @@
         max-width: 130px;
     }
 
-    .empeza-ahora p {
+    .empeza-ahora div {
         text-align: left;
+    }
+
+    .empeza-ahora p {
         font-size: var(--fs-desktop-3);
         margin: 0 auto .5em auto;
+    }
+
+    .empeza-ahora a {
+        padding: .5em 2em;
     }
 
     /* EMPEZA AHORA END */
