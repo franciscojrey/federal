@@ -181,6 +181,7 @@ p {
     border: 1px solid rgb(226, 226, 226);
     padding: 1em;
     margin: 0 2em;
+    max-width: 600px;
 }
 
 .home-titulo {
@@ -222,7 +223,7 @@ p {
 }
 
 .dolar-mep {
-    max-width: 1100px;
+    max-width: 500px;
     margin: 4em auto 0 auto;
     padding: 1.5em;
     text-align: left;
@@ -323,7 +324,7 @@ p {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 10vh;
+    height: 15vh;
 
 }
 
@@ -371,6 +372,7 @@ p {
 
 .abrir-cuenta-card {
     display: none;
+    max-width: 350px;
     transition: opacity 0.3s ease-in-out;
     background-color: var(--clr-gris, #f0f0f0);
     border: 2px solid var(--clr-gris-intermedio, #00B7F3);
@@ -580,7 +582,7 @@ p {
         max-width: 1100px;
         margin-top: 12em;
         text-align: left;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr .5fr;
         grid-template-areas: 
         "container img";
     }
@@ -604,6 +606,7 @@ p {
 
     .dolar-mep {
         max-width: 800px;
+        padding: 3em 1.5em;
     }
 
     .dolar-mep-titulo {
@@ -633,6 +636,10 @@ p {
     
     /* --------------- ABRIR CUENTA END --------------- */
 
+    .abrir-cuenta {
+        margin-bottom: 4em;
+    }
+
     .abrir-cuenta-texto {
         text-align: center;
     }
@@ -656,6 +663,9 @@ p {
 
     .abrir-cuenta-card {
         display: block;
+        width: 250px;
+        height: 220px;
+        margin: 0 auto;
     }
 
     .abrir-cuenta-flecha {
@@ -670,6 +680,7 @@ p {
 
     .acerca-de {
         max-width: 800px;
+        padding: 4em 2em;
     }
 
     .acerca-de-box {
