@@ -2,7 +2,7 @@
 
 .contacto-container {   
     padding: 0 2em;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 6em auto;
 }
 
@@ -23,13 +23,33 @@
 
 .contacto-card {
     grid-area: card;
-    border: 1px solid var(--clr-rojo-fuerte);
+    position: relative;
+    border: 1px solid transparent;    
     border-radius: 18px;
     padding: 2em;
     background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 233, 233));
     margin-bottom: 4em;
     color: var(--clr-negro);
+    z-index: 1;
 }
+
+.contacto-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 18px;
+    padding: 1px;
+    background: linear-gradient(to bottom right, rgba(208, 26, 29, 0.200), rgba(173, 173, 173, 0.200));
+    z-index: -1;
+    mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    mask-composite: exclude;
+    -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+}
+
 
 .contacto-card h3 {
     font-family: fuente1;
@@ -62,15 +82,15 @@
     font-size: var(--fs-mobile-4);
 }
 
+.contacto-subtitulo img {
+    margin-left: 1em;
+}
+
 .contacto-datos p {
     margin-bottom: .8em;
     color: var(--clr-negro);
     font-size: var(--fs-mobile-5);
     font-family: fuente2;
-}
-
-.contacto-subtitulo img {
-    margin-left: 1em;
 }
 
 .contacto-datos-red {
@@ -165,6 +185,7 @@
     .contacto-container {
         margin-top: 12em;
     }
+
     .contacto-card-imagen {        
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -172,10 +193,12 @@
     }
 
     .contacto-imagen { 
-        max-width: 150px;
+        max-width: 350px;
+        margin-right: 0;
     }
 
     .contacto-card {
+        margin: 2em 0;
         padding: 4em 2em;
         text-align: left;
     }
@@ -192,8 +215,16 @@
         font-size: var(--fs-desktop-4);
     }
 
+    .contacto-datos-box {
+        display: flex;
+    }
+
     .contacto-datos p {
         font-size: var(--fs-desktop-5);
+    }
+
+    .contacto-datos iframe {
+        height: 50vh;
     }
 
     .contacto-formulario-titulo {

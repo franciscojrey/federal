@@ -1,6 +1,6 @@
 #aranceles-table-container, 
 .aranceles-container {
-    max-width: 1500px;
+    max-width: 1300px;
 }
 
 /* --------------- ARANCELES START --------------- */
@@ -14,23 +14,15 @@
     margin: 6em auto;
 }
 
-.aranceles-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    cursor: pointer;
-    font-weight: bold;
-    font-family: fuente1;
-}
-
 .aranceles-texto-titulo {
     font-family: fuente1;
     color: var(--clr-rojo-fuerte);
     font-size: var(--fs-mobile-2);
+    font-weight: 800;
 }
 
 .aranceles-texto-descripcion {
+    font-weight: 400;
     font-family: fuente2;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -70,9 +62,6 @@
 
 .selector-flecha {
     margin-left: auto;
-    font-weight: bold;
-    font-family: fuente1;
-    font-size: var(--fs-mobile-2);
 }
 
 #selector-flecha-abajo {
@@ -115,8 +104,9 @@
     color: var(--clr-gris-oscuro);
     font-size: var(--fs-mobile-6);
     grid-area: aranceles-titulo;
-    font-family: fuente1;
+    font-family: fuente2;
     margin-bottom: .5em;
+    font-weight: 700;
 }
 
 .aranceles-subtitulo { 
@@ -171,6 +161,7 @@
     font-family: fuente1;
     padding: 0.75em;
     text-align: center;
+    font-weight: 400;
 }
 
 .aranceles-table td {
@@ -208,6 +199,7 @@
 
 .aranceles-table td:first-child {
     color:var(--clr-gris-oscuro);
+    font-weight: 700;
 }
 
 .aranceles-table td:nth-child(2),
@@ -230,6 +222,14 @@
 
     .aranceles-container {
         margin-top: 12em;
+    }
+
+    .aranceles-texto-titulo {
+        font-size: var(--fs-desktop-2);
+    }
+    
+    .aranceles-texto-descripcion {
+        font-size: var(--fs-desktop-6);
     }
 
     .selector-box {
