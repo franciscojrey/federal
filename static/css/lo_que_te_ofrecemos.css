@@ -14,7 +14,7 @@
 
 .servicios-dolar-mep-texto {
     grid-area: titulo;
-    padding: 0 2em;
+    padding: 0 2em;    
 }   
 
 .servicios-dolar-mep-texto h3 {
@@ -298,6 +298,7 @@
 .servicios-financiamiento-container {
     margin: 4em auto 4em auto;
     padding: 2em;
+    max-width: 600px;
 }
 
 .servicios-financiamiento-texto h3 {
@@ -312,15 +313,14 @@
     color: var(--clr-negro);
     font-size: var(--fs-mobile-5);
     font-family: fuente2;
-    max-width: 80%;
     margin: 0 auto 1em auto;
 }
 
 .servicios-financiamiento-box {
     margin: 0 auto;
-    max-width: 1100px;
     justify-content: space-between;
     gap: 1em;
+    max-width: 850px;
 }
 
 .servicios-financiamiento-card {
@@ -331,6 +331,7 @@
     border-radius: 10px;
     align-items: center;
     text-align: left;
+    max-width: 400px;
     gap: 1em;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -575,6 +576,10 @@
 
     /* TEST DEL INVERSOR START */
 
+    .test-container {
+        padding: 4em 2em;
+    }
+
     .test-texto h3 {
         font-size: var(--fs-desktop-4);
     }
@@ -583,6 +588,10 @@
 
 
     /* SERVICIOS FINANCIAMIENTO START */
+
+    .servicios-financiamiento-container {
+        max-width: none;
+    }
 
     .servicios-financiamiento-box {
         display: flex;
@@ -628,7 +637,8 @@
     .empeza-ahora {
         display: flex;
         justify-content: center;
-        gap: 4em;        
+        gap: 4em;
+        padding: 4em 2em;
     }
 
     .empeza-ahora img {
