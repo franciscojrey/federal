@@ -54,7 +54,7 @@ function actualizarVisualizacion(opcion) {
     const tables = document.querySelectorAll('.aranceles-table');
     const tableContainer = document.getElementById('aranceles-table-container');
 
-    const esDesktop = window.innerWidth >= 769;
+    const esDesktop = window.innerWidth >= 1200;
 
     if (esDesktop) {
         tables.forEach(table => {

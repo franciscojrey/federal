@@ -3,7 +3,7 @@ function elegirOpcion(opcion) {
     const juridica = document.getElementById('documentacion-juridica');
     const fisica = document.getElementById('documentacion-fisica');
 
-    const esDesktop = window.innerWidth >= 769;
+    const esDesktop = window.innerWidth >= 1200;
 
     if(esDesktop){
         fisica.style.display = 'block';

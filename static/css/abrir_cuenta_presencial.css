@@ -102,7 +102,7 @@ h3 {
 /* --------------- CUENTA PRESENCIAL END --------------- */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     .cuenta-presencial-container {
         max-width: 1200px;

@@ -135,7 +135,7 @@
 /* --------------- FAQ END --------------- */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     .faq-container {
         margin-top: 12em;

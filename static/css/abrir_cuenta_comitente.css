@@ -70,7 +70,7 @@
 /* --------------- ABRIR CUENTA END --------------- */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
     .abrir-cuenta-comitente-container{    
         margin: 12em auto 4em auto;
     }    

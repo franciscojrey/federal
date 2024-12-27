@@ -160,7 +160,7 @@
 /* --------------- CONTACTO END --------------- */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     .contacto-container {
         margin-top: 12em;

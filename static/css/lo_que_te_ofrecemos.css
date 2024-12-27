@@ -433,7 +433,7 @@
 }
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     .servicios-dolar-mep-container {
         padding: 0 2em;

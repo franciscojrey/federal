@@ -562,7 +562,7 @@ p {
 /* --------------- OPERA END --------------- */
 
 /* Desktop */
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
         
     .boton-transparente-borde-rojo,
     .boton-fondo-celeste,

@@ -118,13 +118,17 @@ header {
     padding-bottom: .8em;
 }
 
-.dropdown-item.open .dropdown-header {
-    color: var(--clr-rojo-fuerte);
+.dropdown-item.open .dropdown-header { 
     border-bottom: none; 
 }
 
 .dropdown-header span {
     font-size: var(--fs-mobile-5);
+    color: var(--clr-negro);
+}
+
+.dropdown-item.open .dropdown-header span {
+    color: var(--clr-rojo-fuerte);
 }
 
 .dropdown-header img {
@@ -132,7 +136,6 @@ header {
     width: 20px;
     height: 20px;
 }
-
 
 .dropdown-item.open .dropdown-header-imagen {
     filter: invert(11%) sepia(99%) saturate(5023%) hue-rotate(354deg) brightness(94%) contrast(89%);
@@ -200,7 +203,7 @@ header {
     display: block;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 1200px) {
 
     .top-background {
         margin-top: -10em;

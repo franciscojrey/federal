@@ -1,7 +1,7 @@
-var esDesktop = window.innerWidth >= 769;
+var esDesktop = window.innerWidth >= 1200;
 
 function manejarReajustePagina() {
-    esDesktop = window.innerWidth >= 769;
+    esDesktop = window.innerWidth >= 1200;
 
     const hamburguesaDesktop = document.querySelector('.hamburguesa-desktop');
     const cruz = document.querySelector('.cruz-desktop');

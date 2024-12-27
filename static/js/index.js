@@ -1,7 +1,7 @@
-var esMobile = window.innerWidth < 769;
+var esMobile = window.innerWidth < 1200;
 
 function manejarReajustePagina() {
-    esMobile = window.innerWidth < 769;
+    esMobile = window.innerWidth < 1200;
 }
 
 window.addEventListener('resize', manejarReajustePagina);
