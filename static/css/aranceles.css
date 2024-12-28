@@ -55,7 +55,7 @@
 
 .selector-box p{
     margin: auto 0;
-    font-weight: bold;
+    font-weight: 700;
     font-family: fuente1;
     font-size: var(--fs-mobile-3);
 }

@@ -38,6 +38,7 @@ h3 {
     margin-bottom: .5em;
     font-size: var(--fs-mobile-2);
     text-align: left;
+    font-weight: 800;
 }
 
 .cuenta-presencial-hero p {
@@ -79,12 +80,13 @@ h3 {
     color: var(--clr-negro);
     margin: 2em 0;
     font-size: var(--fs-mobile-3);
+    font-weight: 700;
 }
 
 .documentacion-titulo {
     cursor: pointer;
     font-family: fuente1;
-    font-weight: bold;
+    font-weight: 700;
     color: var(--clr-celeste);
     font-size: var(--fs-mobile-4);
 }

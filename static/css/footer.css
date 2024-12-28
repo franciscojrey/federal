@@ -35,7 +35,7 @@
     font-family: fuente1;
     color: var(--clr-gris);
     letter-spacing: 2px;
-    font-weight: bolder;
+    font-weight: 700;
     margin-bottom: .5em;
     margin-top: .8em;
     line-height: 1.5em;
@@ -148,6 +148,7 @@
     font-family: fuente2;
     font-size: var(--fs-mobile-6);
     margin: 0 auto;
+    font-weight: 400;
 }
 
 .footer-contacto-informacion p {
@@ -219,6 +220,7 @@
     font-family: fuente3;
     font-size: var(--fs-mobile-7);
     padding-bottom: 4em;
+    font-weight: 400;
 }
 
 /* --------------- COPYRIGHT START --------------- */
