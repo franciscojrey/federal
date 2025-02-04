@@ -50,6 +50,7 @@ header {
     cursor: pointer;
     float: right;
     font-family: fuente2;
+    text-decoration: none;
 }
 
 .ingresar {
