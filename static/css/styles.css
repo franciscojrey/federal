@@ -282,7 +282,7 @@ p {
 .tipos-especies ul {
     list-style: none;
     flex-shrink: 0;
-    min-width: 100%;
+    min-width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
