@@ -351,12 +351,28 @@
 
 /* --------------- BENEFICIOS END --------------- */
 
+
+/* --------------- OLA SERVICIOS START --------------- */
+
+.ola-servicios {
+    background-image: url('../img/lo_que_te_ofrecemos/ola_servicios.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 25vh;
+    margin-top: -1px; /* Prevent any potential gap */
+}
+
+/* --------------- OLA SERVICIOS END --------------- */
+
+
 /* --------------- OPERAR SECTORES START --------------- */
 
 .operar-sectores {
-    margin: 4em 0;
+    margin: -2px 0 4em 0;
     padding: 0 2em;
-    background-color: var(--clr-rojo-intermedio);
+    background: #d01a1c;
+    background: linear-gradient(180deg, #d01a1c 0%, #E94732 100%);
     height: 440px;
 }
 
