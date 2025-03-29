@@ -180,7 +180,7 @@ p {
     background: linear-gradient(to right, rgb(252, 251, 251), rgb(236, 236, 236));
     border-radius: 18px;
     border: 1px solid rgb(226, 226, 226);
-    padding: 1em;
+    padding: 1.5em;
     margin: 0 2em;
     max-width: 600px;
 }
@@ -602,7 +602,19 @@ p {
         font-size: var(--fs-desktop-5);
     }
 
+    .home-container-botones {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 
+    .home-container-botones a {
+        padding: .6em 0;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        text-align: center;
+    }
     /* --------------- HOME END --------------- */
 
     /* --------------- DOLAR MEP START --------------- */
