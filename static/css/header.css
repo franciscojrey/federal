@@ -230,6 +230,11 @@ header {
         font-size: var(--fs-desktop-4)
     }
 
+    .nombre a {
+        text-decoration: none;
+        color: var(--clr-rojo-fuerte);
+    }
+
     .boton {
         font-size: var(--fs-desktop-5);
     }
