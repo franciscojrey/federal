@@ -6,8 +6,7 @@ body {
 .top-background {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 1200px;
     height: 25vh;    
     z-index: -1; 
     background-image: url("../img/header/ola.svg");
@@ -202,8 +201,7 @@ header {
 @media (min-width: 1200px) {
 
     .top-background {
-        margin-top: -10em;
-        height: 50vh;
+        width: 1920px;
     }
 
     header {
