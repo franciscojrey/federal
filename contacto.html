@@ -67,9 +67,9 @@
                     <div class="contacto-subtitulo">
                         <h3>También podés seguirnos en</h3>                        
                     </div>
-                    <img class="contacto-datos-red" src="static/img/contacto/linkedin.svg" alt="">
-                    <img class="contacto-datos-red" id="contacto-datos-red2" src="static/img/contacto/instagram.svg" alt="">
-                    <img class="contacto-datos-red" id="contacto-datos-red3" src="static/img/contacto/facebook.svg" alt="">
+                    <a href="https://www.linkedin.com/company/federalbursatil/?originalSubdomain=ar"><img class="contacto-datos-red" src="static/img/contacto/linkedin.svg" alt=""></a>
+                    <a href="https://www.instagram.com/federalbursatil/?hl=en"><img class="contacto-datos-red" id="contacto-datos-red2" src="static/img/contacto/instagram.svg" alt=""></a>
+                    <a href="https://www.facebook.com/federalbursatil/?locale=es_LA"><img class="contacto-datos-red" id="contacto-datos-red3" src="static/img/contacto/facebook.svg" alt=""></a>
                 </div>
 
                 <div class="contacto-formulario">
@@ -77,21 +77,7 @@
                         <h3 class="contacto-formulario-titulo">¿Tenés alguna consulta en especial?</h3>
                         <p class="contacto-formulario-subtitulo">Completa el siguiente formulario. Lo recibiremos en nuestra casilla de correos de consulta y dudas.</p>
                         <p class="contacto-formulario-horario">Horario de atención de 11:00 a 17:00 hrs.</p>
-                        <!--
-                        <?php
-                        if (!isset($_GET['contact'])) {
-                        }
-                        else {
-                            $contactCheck = $_GET['contact'];
-                            if ($contactCheck == "empty") {
-                                echo "<div class='contact-message-box'><p class='contact-message error'>Debe completar todos los campos.</p></div>";
-                            }
-                            elseif ($contactCheck == "success") {
-                                echo "<div class='contact-message-box'><p class='contact-message success'>Gracias por contactarse con nosotros. Le responderemos a la brevedad.</p></div>";
-                            }
-                        }
-                        ?>
-                        -->
+
                         <div class="contacto-formulario-item">
                             <p class="contacto-formulario-item-texto">Nombre</p>
                             <input type="text" class="contacto-formulario-input" name="nombre" placeholder="Nombre" aria-label="nombre" required minlength="2">
@@ -101,12 +87,7 @@
                             <p class="contacto-formulario-item-texto">Email</p>
                             <input type="text" class="contacto-formulario-input" name="email" placeholder="Email" aria-label="email" required minlength="4">
                         </div>
-                        
-                        <div class="contacto-formulario-item">
-                            <p class="contacto-formulario-item-texto">Asunto</p>
-                            <input type="text" class="contacto-formulario-input" name="asunto" placeholder="Asunto" aria-label="asunto" required minlength="2">
-                        </div>
-                        
+                                               
                         <div class="contacto-formulario-item">
                             <p class="contacto-formulario-item-texto">Duda</p>
                             <textarea class="contacto-formulario-input" name="duda" placeholder="Escribí tu duda acá" aria-label="mensaje" required minlength="4"></textarea>
