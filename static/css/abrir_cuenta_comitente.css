@@ -65,9 +65,10 @@
 }
 
 .abrir-cuenta-comitente-box-contactos {
-    grid-area: btn-contactos;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
 }
-
 
 /* --------------- ABRIR CUENTA END --------------- */
 
@@ -89,4 +90,8 @@
     .abrir-cuenta-comitente-box p {
         font-size: var(--fs-desktop-3);
     }    
+
+    .abrir-cuenta-comitente-box-contactos {
+        min-height: 0;
+    }
 }
