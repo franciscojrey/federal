@@ -216,7 +216,8 @@ header {
 
     .top-background {
         width: 1920px;
-        height: 30vh;
+        height: 100%;
+        background-image: url("../img/header/ola.png");
     }
 
     header {
