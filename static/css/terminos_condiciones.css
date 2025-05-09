@@ -21,7 +21,7 @@
 .terminos-condiciones-texto h3{
     font-family: fuente1;
     color: var(--clr-negro);
-    font-size: 2rem;
+    font-size: var(--fs-mobile-2);
     margin: .8em 0;
     font-weight: 800;
 }
@@ -29,21 +29,40 @@
 .terminos-condiciones-texto h4 {
     font-family: fuente1;
     color: var(--clr-negro);
-    font-size: 1.1rem;
-    margin-bottom: .4em;
+    font-size: var(--fs-mobile-4);
+    margin: 1em 0;
     font-weight: 700;
 }
 
-.terminos-condiciones-texto p {
-    font-size: .9rem;
+.terminos-condiciones-texto h5 {
+    font-family: fuente1;
     color: var(--clr-negro);
-    font-family: fuente2;
-    margin-bottom: 1.4em;
-    font-weight: 400;
+    font-size: var(--fs-mobile-5);
+    margin: 1em 0;
+    font-weight: 700;
 }
 
-.terminos-condiciones-texto a {
-    color: var(--clr-rojo-fuerte);
+.terminos-condiciones-texto p, .terminos-condiciones-texto li {
+    font-size: var(--fs-mobile-6);
+    color: var(--clr-negro);
+    font-family: fuente2;
+    font-weight: 400;    
+}
+
+.btn-condiciones-generales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.politicas-privacidad-texto {
+    margin: 1em 0;
+}
+
+.tyc-link {
+    color: var(--clr-negro);
+    text-decoration: underline;
 }
 
 /* --------------- terminos-condiciones END --------------- */
@@ -52,5 +71,25 @@
 @media (min-width: 1200px) {
     .terminos-condiciones-container {
         margin-top: 12em;
+    }
+
+    .terminos-condiciones-texto h3 {
+        font-size: var(--fs-desktop-2);
+    }
+
+    .terminos-condiciones-texto h4 {
+        font-size: var(--fs-desktop-4);
+    }
+
+    .terminos-condiciones-texto h5 {
+        font-size: var(--fs-desktop-5);
+    }
+
+    .terminos-condiciones-texto p, .terminos-condiciones-texto li {
+        font-size: var(--fs-desktop-6);
+    }
+
+    .terminos-condiciones-texto a {
+        padding: .6em 0;
     }
 }
