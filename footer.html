@@ -22,8 +22,14 @@
             <div class="footer-informacion-bloque4">
                 <h3 class="footer-informacion-titulo">Accedé al Newsletter</h3>
                 <h4 class="footer-informacion-descripcion">Ingresa tu email y recibí las novedades por correo</h4>
-                <h4 class="footer-informacion-descripcion">Correo electrónico</h4>
-                <input class="footer-informacion-input" type="email" placeholder="Correo electrónico"></input>
+                <form action="https://federal.adabolsaweb.com/usuarios/suscribirse-newsletter/" method="POST" class="footer-informacion-newsletter-form">
+                    <label for="email" class="footer-informacion-descripcion">Correo electrónico</label>
+                    
+                    <div class="footer-informacion-input-container">
+                        <input class="footer-informacion-input" type="email" name="email" placeholder="Correo electrónico" required/>
+                        <button type="submit" class="footer-informacion-input-arrow">&rsaquo;</button>
+                    </div>
+                </form>
             </div>
     
             <div class="footer-redes-sociales">

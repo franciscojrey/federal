@@ -227,6 +227,62 @@
 
 /* --------------- INFORMACION NEGRO END --------------- */
 
+
+/* SUSCRIPCIÓN NEWSLETTER START */
+
+.footer-informacion-newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* space between label and input container */
+    max-width: 300px; /* or whatever fits your layout */
+  }
+  
+  .footer-informacion-input-container {
+    position: relative;
+  }
+  
+  /* Input styled like a pill */
+  .footer-informacion-input {
+    width: 100%;
+    padding: 0.8em 2.5em 0.8em 1em;  /* extra right padding to make space for arrow */
+    border: none;
+    border-radius: 20px;
+    background-color: #f2f7f8;  /* or your desired color */
+    color: #7f9ca3;
+    font-size: var(--fs-mobile-5);
+    font-family: fuente2;
+    outline: none;
+  }
+  
+  .footer-informacion-input::placeholder {
+    color: #7f9ca3;
+  }
+  
+  .footer-informacion-input:focus {
+    outline: 2px solid #7f9ca3;
+  }
+  
+  /* Arrow button on the right side of the input */
+  .footer-informacion-input-arrow {
+    position: absolute;
+    right: 1em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #007bff; /* arrow color */
+    font-size: 1.2rem;
+    cursor: pointer;
+    outline: none;
+    /* optional hover/focus styles */
+  }
+  
+  .footer-informacion-input-arrow:hover {
+    color: #005fc7; /* slightly darker on hover */
+  }
+
+/* SUSCRIPCION NEWSLETTER END*/
+
 /* --------------- FOOTER END --------------- */
 
 
