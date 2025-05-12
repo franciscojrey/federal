@@ -2,7 +2,7 @@
 
 .servicios-dolar-mep-container {   
     gap: 1em;
-    margin: 6em auto 0 auto;
+    margin: 10em auto 0 auto;
     grid-auto-rows: auto;
     display: grid;
     align-items: center;
