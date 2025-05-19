@@ -181,10 +181,6 @@ header {
     font-family: fuente2;
 }
 
-.submenu a:hover {
-    border-radius: 4px;
-}
-
 .dropdown-cerrar {
     display: flex;
     align-items: center;   
