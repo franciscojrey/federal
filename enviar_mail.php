@@ -13,10 +13,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $body = "Nombre: $nombre\nEmail: $email\n\nMensaje:\n$mensaje";
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "<script>alert('Mensaje enviado correctamente.');window.history.back();</script>";
-    } else {
-        echo "<script>alert('Error al enviar el mensaje. Intente nuevamente.');window.history.back();</script>";
-    }
+    $status = mail($to, $subject, $body, $headers) ? 
+        ['success' => true, 'message' => 'Mensaje enviado correctamente. Nos pondremos en contacto a la brevedad.'] : 
+        ['success' => false, 'message' => 'Error al enviar el mensaje. Revise los datos ingresados y vuelva a intentarlo.'];
+    
+    header('Content-Type: application/json');
+    echo json_encode($status);
+    exit;
 }
 ?>

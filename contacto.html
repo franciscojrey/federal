@@ -26,7 +26,7 @@
         <div id="header-container"></div>
         
         <main>                      
-            <div class="contacto-container">               
+            <div class="contacto-container">                
                 <div class="contacto-card-imagen">
                     <img class="contacto-imagen" src="static/img/contacto/mano_celular.svg" alt="">
                     <div class="contacto-card">
@@ -72,28 +72,31 @@
                     <a href="https://www.facebook.com/federalbursatil/?locale=es_LA"><img class="contacto-datos-red" id="contacto-datos-red3" src="static/img/contacto/facebook.svg" alt=""></a>
                 </div>
 
-                <div class="contacto-formulario">
-                    <form action="enviar_mail.php" method="post" class="form">
+                <div class="contacto-formulario">                    
+                    <form id="contact-form" action="enviar_mail.php" method="post" class="form">
                         <h3 class="contacto-formulario-titulo">¿Tenés alguna consulta en especial?</h3>
                         <p class="contacto-formulario-subtitulo">Completa el siguiente formulario. Lo recibiremos en nuestra casilla de correos de consulta y dudas.</p>
                         <p class="contacto-formulario-horario">Horario de atención de 11:00 a 17:00 hrs.</p>
 
+                        
                         <div class="contacto-formulario-item">
                             <p class="contacto-formulario-item-texto">Nombre</p>
                             <input type="text" class="contacto-formulario-input" name="nombre" placeholder="Nombre" aria-label="nombre" required minlength="2">
                         </div>
-
+                        
                         <div class="contacto-formulario-item">
                             <p class="contacto-formulario-item-texto">Email</p>
-                            <input type="text" class="contacto-formulario-input" name="email" placeholder="Email" aria-label="email" required minlength="4">
+                            <input type="email" class="contacto-formulario-input" name="email" placeholder="Email" aria-label="email" required minlength="4">
                         </div>
-                                               
+                        
                         <div class="contacto-formulario-item">
                             <p class="contacto-formulario-item-texto">Duda</p>
                             <textarea class="contacto-formulario-input" name="duda" placeholder="Escribí tu duda acá" aria-label="mensaje" required minlength="4"></textarea>
                         </div>                        
                         
                         <button class="boton-transparente-borde-rojo" type="submit" name="enviar">Enviar</button>
+                        
+                        <div id="message-container" class="message-container"></div>
                     </form>  
                 </div>
             </div>        
@@ -105,5 +108,6 @@
         <script src="static/js/header.js"></script>
 
         <script src="static/js/footer.js"></script>
+        <script src="static/js/contacto.js"></script>
     </body>    
 </html>
