@@ -189,23 +189,7 @@
     height: 180px;
     width: 300px;
     margin: 0 auto;
-}
-
-.servicios-inversion-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius:18px;
-    padding: 2px;
-    background: linear-gradient(to bottom, #AC282880, #E0E9EC);
-    z-index: -1;
-    mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
+    border: 1px solid var(--clr-rojo-intermedio);
 }
 
 .servicios-inversion-card.activo {
@@ -553,29 +537,8 @@
     
     .servicios-inversion-card {
         display: block;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
-
-    #servicios-inversion-card-4::before,
-    #servicios-inversion-card-5::before,
-    #servicios-inversion-card-6::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: -2px;
-        padding: 2px;
-        background: linear-gradient(to bottom, #E0E9EC, #AC282880);
-        z-index: -1;
-        mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-        mask-composite: exclude;
-        -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-        -webkit-mask-composite: xor;
-        border-radius:18px;
-    }
-
-    
+   
     .servicios-inversion-card-encabezado img {
         margin: -4em auto 0 auto;
         height: 130px;

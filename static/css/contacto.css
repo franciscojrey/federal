@@ -31,25 +31,8 @@
     margin-bottom: 4em;
     color: var(--clr-negro);
     z-index: 1;
+    border: 1px solid var(--clr-rojo-intermedio);
 }
-
-.contacto-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 18px;
-    padding: 1px;
-    background: linear-gradient(to bottom right, rgba(208, 26, 29, 0.200), rgba(173, 173, 173, 0.200));
-    z-index: -1;
-    mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-    mask-composite: exclude;
-    -webkit-mask: linear-gradient(var(--clr-gris) 0 0) content-box, linear-gradient(#000 0 0);
-    -webkit-mask-composite: xor;
-}
-
 
 .contacto-card h3 {
     font-family: fuente1;
