@@ -33,11 +33,11 @@
                 <div class="servicios-dolar-mep-precios">
                     <div class="servicios-dolar-mep-precio-box servicios-dolar-mep-precio-box-compra">
                         <p class="servicios-dolar-mep-precio-titulo">COMPRA</p>
-                        <p class="servicios-dolar-mep-precio">$ 1.1140,88</p>
+                        <p class="servicios-dolar-mep-precio"></p>
                     </div>
                     <div class="servicios-dolar-mep-precio-box servicios-dolar-mep-precio-box-venta">
                         <p class="servicios-dolar-mep-precio-titulo">VENTA</p>
-                        <p class="servicios-dolar-mep-precio">$ 1.1150,88</p>
+                        <p class="servicios-dolar-mep-precio"></p>
                     </div>
                     <div class="servicios-dolar-mep-precios-descripcion">
                         <p>Sin límites - 100% legal - Sin riegos - En pocos pasos - Las 24 horas</p>
@@ -226,5 +226,25 @@
         <script src="static/js/lo_que_te_ofrecemos.js"></script>
 
         <script src="static/js/footer.js"></script>
+
+        <script>
+            async function actualizarMEP() {
+              try {
+                const res = await fetch("https://dolarify-api.vercel.app/api/dolar");
+                const data = await res.json();
+                const mep = data.dolarMep;
+                const buy = mep.compra.toLocaleString("es-AR", {minimumFractionDigits:2});
+                const sell = mep.venta.toLocaleString("es-AR", {minimumFractionDigits:2});
+                document.querySelector(".servicios-dolar-mep-precio-box-compra .servicios-dolar-mep-precio")
+                        .textContent = "$ " + buy;
+                document.querySelector(".servicios-dolar-mep-precio-box-venta .servicios-dolar-mep-precio")
+                        .textContent = "$ " + sell;
+              } catch (e) {
+                console.error("Error al cargar MEP:", e);
+              }
+            }
+            actualizarMEP();
+            setInterval(actualizarMEP, 5 * 60 * 1000);
+          </script>
     </body>    
 </html>
