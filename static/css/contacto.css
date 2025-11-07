@@ -141,9 +141,20 @@
     font-size: var(--fs-mobile-6);
     font-family: fuente2;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
-.contacto-formulario-input::placeholder {
+select.contacto-formulario-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    padding-right: 2.5em;
+    cursor: pointer;
+}
+
+.contacto-formulario-input::placeholder,
+.contacto-formulario-input {
     color: var(--clr-gris-oscuro);
 }
 
