@@ -230,21 +230,24 @@
         <script>
             async function actualizarMEP() {
               try {
-                const res = await fetch("https://dolarify-api.vercel.app/api/dolar");
+                const res = await fetch("https://dolarapi.com/v1/dolares/bolsa");
                 const data = await res.json();
-                const mep = data.dolarMep;
-                const buy = mep.compra.toLocaleString("es-AR", {minimumFractionDigits:2});
-                const sell = mep.venta.toLocaleString("es-AR", {minimumFractionDigits:2});
+                
+                const buy = data.compra.toLocaleString("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                const sell = data.venta.toLocaleString("es-AR", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                
                 document.querySelector(".servicios-dolar-mep-precio-box-compra .servicios-dolar-mep-precio")
                         .textContent = "$ " + buy;
                 document.querySelector(".servicios-dolar-mep-precio-box-venta .servicios-dolar-mep-precio")
                         .textContent = "$ " + sell;
               } catch (e) {
-                console.error("Error al cargar MEP:", e);
+                console.error("Error al cargar dólar MEP:", e);
               }
             }
+            
             actualizarMEP();
+            
             setInterval(actualizarMEP, 5 * 60 * 1000);
-          </script>
+        </script>
     </body>    
 </html>
